@@ -1,0 +1,3173 @@
+;; Object semanticdb-project-database-file-165d7f0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-165d7f0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-165d80c"
+      :major-mode c++-mode
+      :tags 
+        '( ("irrlichttypes.h" include nil nil [800 826])
+            ("string" include (:system-flag t) nil [827 844])
+            ("InputHandler" type
+               (:prototype t
+                :type "class")
+                nil [846 865])
+            ("ChatBackend" type
+               (:prototype t
+                :type "class")
+                nil [866 884])
+            ("SubgameSpec" type
+               (:prototype t
+                :type "struct")
+                nil [926 945])
+            ("GameStartData" type
+               (:prototype t
+                :type "struct")
+                nil [946 967])
+            ("Jitter" type
+               (:members 
+                  ( ("max" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051])
+                    ("min" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051])
+                    ("avg" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051])
+                    ("counter" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051])
+                    ("max_sample" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051])
+                    ("min_sample" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051])
+                    ("max_fraction" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [986 1051]))                  
+                :type "struct")
+                nil [969 1054])
+            ("RunStats" type
+               (:members 
+                  ( ("drawtime" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1075 1088])
+                    ("dtime_jitter" variable (:type ("Jitter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1091 1129])
+                    ("busy_time_jitter" variable (:type ("Jitter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1091 1129]))                  
+                :type "struct")
+                nil [1056 1132])
+            ("CameraOrientation" type
+               (:members 
+                  ( ("camera_yaw" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1162 1177])
+                    ("camera_pitch" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1198 1215]))                  
+                :type "struct")
+                nil [1134 1232])
+            ("the_game" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("kill" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1249 1260])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("InputHandler" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1263 1283])
+                    ("start_data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameStartData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1286 1318])
+                    ("error_message" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1321 1348])
+                    ("chat_backend" variable
+                       (:reference 1
+                        :type ("ChatBackend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1351 1377])
+                    ("reconnect_requested" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1380 1406]))                  
+                :type "void")
+                nil [1235 1407]))          
+      :file "game.h"
+      :pointmax 1408
+      :fsize 1407
+      :lastmodtime '(24606 33240 150107 60000)
+      :unmatched-syntax '((symbol 794 . 798) (symbol 787 . 793) (punctuation 786 . 787)))
+    (semanticdb-table "semanticdb-table-bb7a28"
+      :major-mode c++-mode
+      :tags 
+        '( ("game.h" include nil nil [791 808])
+            ("iomanip" include (:system-flag t) nil [810 828])
+            ("cmath" include (:system-flag t) nil [829 845])
+            ("client/renderingengine.h" include nil nil [846 881])
+            ("camera.h" include nil nil [882 901])
+            ("client.h" include nil nil [902 921])
+            ("client/clientevent.h" include nil nil [922 953])
+            ("client/gameui.h" include nil nil [954 980])
+            ("client/inputhandler.h" include nil nil [981 1013])
+            ("client/tile.h" include nil nil [1014 1038])
+            ("client/keys.h" include nil nil [1064 1088])
+            ("client/joystick_controller.h" include nil nil [1089 1128])
+            ("clientmap.h" include nil nil [1129 1151])
+            ("clouds.h" include nil nil [1152 1171])
+            ("config.h" include nil nil [1172 1191])
+            ("content_cao.h" include nil nil [1192 1216])
+            ("content/subgames.h" include nil nil [1217 1246])
+            ("client/event_manager.h" include nil nil [1247 1280])
+            ("fontengine.h" include nil nil [1281 1304])
+            ("itemdef.h" include nil nil [1305 1325])
+            ("log.h" include nil nil [1326 1342])
+            ("filesys.h" include nil nil [1343 1363])
+            ("gameparams.h" include nil nil [1364 1387])
+            ("gettext.h" include nil nil [1388 1408])
+            ("gui/guiChatConsole.h" include nil nil [1409 1440])
+            ("gui/guiConfirmRegistration.h" include nil nil [1441 1480])
+            ("gui/guiFormSpecMenu.h" include nil nil [1481 1513])
+            ("gui/guiKeyChangeMenu.h" include nil nil [1514 1547])
+            ("gui/guiPasswordChange.h" include nil nil [1548 1582])
+            ("gui/guiVolumeChange.h" include nil nil [1583 1615])
+            ("gui/mainmenumanager.h" include nil nil [1616 1648])
+            ("gui/profilergraph.h" include nil nil [1649 1679])
+            ("mapblock.h" include nil nil [1680 1701])
+            ("minimap.h" include nil nil [1702 1722])
+            ("nodedef.h" include nil nil [1723 1743])
+            ("nodemetadata.h" include nil nil [1796 1821])
+            ("particles.h" include nil nil [1822 1844])
+            ("porting.h" include nil nil [1845 1865])
+            ("profiler.h" include nil nil [1866 1887])
+            ("raycast.h" include nil nil [1888 1908])
+            ("server.h" include nil nil [1909 1928])
+            ("settings.h" include nil nil [1929 1950])
+            ("shader.h" include nil nil [1951 1970])
+            ("sky.h" include nil nil [1971 1987])
+            ("translation.h" include nil nil [1988 2012])
+            ("util/basic_macros.h" include nil nil [2013 2043])
+            ("util/directiontables.h" include nil nil [2044 2077])
+            ("util/pointedthing.h" include nil nil [2078 2108])
+            ("util/quicktune_shortcutter.h" include nil nil [2109 2148])
+            ("irrlicht_changes/static_text.h" include nil nil [2149 2190])
+            ("version.h" include nil nil [2191 2211])
+            ("script/scripting_client.h" include nil nil [2212 2248])
+            ("hud.h" include nil nil [2249 2265])
+            ("client/sound.h" include nil nil [2321 2347])
+            ("TextDestNodeMetadata" type
+               (:superclasses 
+                  ( ("TextDest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("TextDestNodeMetadata" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2451 2459])
+                            ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2460 2475]))                          
+                        :type ("TextDestNodeMetadata" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2430 2513])
+                    ("gotText" function
+                       (:arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2571 2596]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2558 2873])
+                    ("gotText" function
+                       (:arguments 
+                          ( ("fields" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2888 2912]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2875 2967])
+                    ("m_p" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2970 2980])
+                    ("m_client" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2982 2999]))                  
+                :type "struct")
+                nil [2381 3002])
+            ("TextDestPlayerInventory" type
+               (:superclasses 
+                  ( ("TextDest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("TextDestPlayerInventory" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3080 3095]))                          
+                        :type ("TextDestPlayerInventory" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3056 3141])
+                    ("TextDestPlayerInventory" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3167 3182])
+                            ("formname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3183 3211]))                          
+                        :type ("TextDestPlayerInventory" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3143 3263])
+                    ("gotText" function
+                       (:arguments 
+                          ( ("fields" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3278 3302]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3265 3361])
+                    ("m_client" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3364 3381]))                  
+                :type "struct")
+                nil [3004 3384])
+            ("LocalFormspecHandler" type
+               (:superclasses 
+                  ( ("TextDest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("LocalFormspecHandler" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("formname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3456 3484]))                          
+                        :type ("LocalFormspecHandler" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3435 3515])
+                    ("LocalFormspecHandler" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("formname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3539 3567])
+                            ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3568 3583]))                          
+                        :type ("LocalFormspecHandler" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3518 3634])
+                    ("gotText" function
+                       (:arguments 
+                          ( ("fields" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3650 3674]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3637 4685])
+                    ("m_client" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4688 4715]))                  
+                :type "struct")
+                nil [3386 4718])
+            ("NodeMetadataFormSource" type
+               (:superclasses 
+                  ( ("IFormSource" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4799 4806])
+                    ("NodeMetadataFormSource" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("ClientMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4831 4846])
+                            ("p" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4847 4855]))                          
+                        :type ("NodeMetadataFormSource" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4808 4885])
+                    ("getForm" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4887 5102])
+                    ("resolveText" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5137 5160]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5105 5283])
+                    ("m_map" variable
+                       (:pointer 1
+                        :type ("ClientMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5286 5303])
+                    ("m_p" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5305 5315]))                  
+                :type "class")
+                nil [4748 5318])
+            ("PlayerInventoryFormSource" type
+               (:superclasses 
+                  ( ("IFormSource" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5374 5381])
+                    ("PlayerInventoryFormSource" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5409 5424]))                          
+                        :type ("PlayerInventoryFormSource" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5383 5450])
+                    ("getForm" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5453 5591])
+                    ("m_client" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5594 5611]))                  
+                :type "class")
+                nil [5320 5614])
+            ("NodeDugEvent" type
+               (:superclasses 
+                  ( ("MtEvent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5653 5660])
+                    ("p" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5662 5670])
+                    ("n" variable (:type ("MapNode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5672 5682])
+                    ("NodeDugEvent" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5698 5706])
+                            ("n" variable (:type ("MapNode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5707 5717]))                          
+                        :type ("NodeDugEvent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5685 5737])
+                    ("getType" function
+                       (:methodconst-flag t
+                        :type ("MtEvent::Type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5739 5802]))                  
+                :type "class")
+                nil [5616 5805])
+            ("SoundMaker" type
+               (:members 
+                  ( ("m_sound" variable
+                       (:pointer 1
+                        :type ("ISoundManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5827 5850])
+                    ("m_ndef" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NodeDefManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5852 5881])
+                    ("public" label nil (reparse-symbol classsubparts) [5882 5889])
+                    ("makes_footstep_sound" variable (:type "bool") (reparse-symbol classsubparts) [5891 5917])
+                    ("m_player_step_timer" variable (:type "float") (reparse-symbol classsubparts) [5919 5945])
+                    ("m_player_jump_timer" variable (:type "float") (reparse-symbol classsubparts) [5947 5973])
+                    ("m_player_step_sound" variable (:type ("SimpleSoundSpec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5976 6012])
+                    ("m_player_leftpunch_sound" variable (:type ("SimpleSoundSpec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6014 6055])
+                    ("m_player_rightpunch_sound" variable (:type ("SimpleSoundSpec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6057 6099])
+                    ("SoundMaker" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sound" variable
+                               (:pointer 1
+                                :type ("ISoundManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6113 6134])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6135 6162]))                          
+                        :type ("SoundMaker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6102 6290])
+                    ("playPlayerStep" function (:type "void") (reparse-symbol classsubparts) [6293 6502])
+                    ("playPlayerJump" function (:type "void") (reparse-symbol classsubparts) [6505 6672])
+                    ("viewBobbingStep" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6703 6714])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6715 6726]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6675 6795])
+                    ("playerRegainGround" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6829 6840])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6841 6852]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6798 6921])
+                    ("playerJump" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6947 6958])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6959 6970]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6924 7039])
+                    ("cameraPunchLeft" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7070 7081])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7082 7093]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7042 7201])
+                    ("cameraPunchRight" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7233 7244])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7245 7256]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7204 7365])
+                    ("nodeDug" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7388 7399])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7400 7411]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7368 7565])
+                    ("playerDamage" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7593 7604])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7605 7616]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7568 7733])
+                    ("playerFallingDamage" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("MtEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7768 7779])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7780 7791]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7736 7916])
+                    ("registerReceiver" function
+                       (:arguments 
+                          ( ("mgr" variable
+                               (:pointer 1
+                                :type ("MtEventManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7941 7961]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7919 8548])
+                    ("step" function
+                       (:arguments 
+                          ( ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [8561 8573]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8551 8643]))                  
+                :type "class")
+                nil [5807 8646])
+            ("GameOnDemandSoundFetcher" type
+               (:superclasses 
+                  ( ("OnDemandSoundFetcher" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m_fetched" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8779 8811])
+                    ("private" label nil (reparse-symbol classsubparts) [8812 8820])
+                    ("paths_insert" function
+                       (:arguments 
+                          ( ("dst_paths" variable
+                               (:reference 1
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8840 8873])
+                            ("base" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8876 8900])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8903 8927]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8822 9800])
+                    ("public" label nil (reparse-symbol classsubparts) [9801 9808])
+                    ("fetchSounds" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9827 9851])
+                            ("dst_paths" variable
+                               (:reference 1
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9854 9887])
+                            ("dst_datas" variable
+                               (:reference 1
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9890 9923]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9810 10105]))                  
+                :type "class")
+                nil [8716 10108])
+            ("SamplerLayer_t" type
+               (:typedef ("s32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [10269 10296])
+            ("GameGlobalShaderConstantSetter" type
+               (:superclasses 
+                  ( ("IShaderConstantSetter" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m_sky" variable
+                       (:pointer 1
+                        :type ("Sky" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10377 10388])
+                    ("m_force_fog_off" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10390 10412])
+                    ("m_fog_range" variable
+                       (:pointer 1
+                        :type ("f32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10414 10431])
+                    ("m_fog_enabled" variable (:type "bool") (reparse-symbol classsubparts) [10433 10452])
+                    ("m_sky_bg_color" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("4"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10454 10504])
+                    ("m_fog_distance" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10506 10553])
+                    ("m_animation_timer_vertex" variable (:type ("CachedVertexShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10555 10613])
+                    ("m_animation_timer_pixel" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10615 10671])
+                    ("m_day_light" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10673 10720])
+                    ("m_star_color" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("4"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10722 10770])
+                    ("m_eye_position_pixel" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10772 10828])
+                    ("m_eye_position_vertex" variable (:type ("CachedVertexShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10830 10888])
+                    ("m_minimap_yaw" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10890 10939])
+                    ("m_camera_offset_pixel" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10941 10998])
+                    ("m_camera_offset_vertex" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("3"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11000 11058])
+                    ("m_base_texture" variable (:type ("CachedPixelShaderSetting" type
+                         (:template-specifier 
+                            ( ("SamplerLayer_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11060 11116])
+                    ("m_client" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11118 11135])
+                    ("public" label nil (reparse-symbol classsubparts) [11137 11144])
+                    ("onSettingsChange" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11168 11192]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11146 11280])
+                    ("settingsCallback" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11312 11336])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11337 11352]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11283 11445])
+                    ("setSky" function
+                       (:arguments 
+                          ( ("sky" variable
+                               (:pointer 1
+                                :type ("Sky" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11460 11469]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11448 11486])
+                    ("GameGlobalShaderConstantSetter" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sky" variable
+                               (:pointer 1
+                                :type ("Sky" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11520 11529])
+                            ("force_fog_off" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11530 11550])
+                            ("fog_range" variable
+                               (:pointer 1
+                                :type ("f32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11554 11569])
+                            ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11570 11585]))                          
+                        :type ("GameGlobalShaderConstantSetter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11489 12250])
+                    ("GameGlobalShaderConstantSetter" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12253 12371]))                  
+                :type "class")
+                nil [10306 14920])
+            ("GameGlobalShaderConstantSetterFactory" type
+               (:superclasses 
+                  ( ("IShaderConstantSetterFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m_sky" variable
+                       (:pointer 1
+                        :type ("Sky" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15008 15019])
+                    ("m_force_fog_off" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15021 15043])
+                    ("m_fog_range" variable
+                       (:pointer 1
+                        :type ("f32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15045 15062])
+                    ("m_client" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15064 15081])
+                    ("created_nosky" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("GameGlobalShaderConstantSetter" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [15083 15143])
+                    ("public" label nil (reparse-symbol classsubparts) [15144 15151])
+                    ("GameGlobalShaderConstantSetterFactory" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("force_fog_off" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [15191 15211])
+                            ("fog_range" variable
+                               (:pointer 1
+                                :type ("f32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15215 15230])
+                            ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15231 15246]))                          
+                        :type ("GameGlobalShaderConstantSetterFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15153 15346])
+                    ("setSky" function
+                       (:arguments 
+                          ( ("sky" variable
+                               (:pointer 1
+                                :type ("Sky" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15361 15370]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15349 15508])
+                    ("create" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("IShaderConstantSetter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15511 15719]))                  
+                :type "class")
+                nil [14923 15722])
+            ("SIZE_TAG" variable (:constant-flag t) nil [15789 15797])
+            ("object_hit_delay" variable
+               (:constant-flag t
+                :default-value "0.2"
+                :type "float")
+                nil [16009 16044])
+            ("FpsControl" type
+               (:members 
+                  ( ("last_time" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16067 16104])
+                    ("busy_time" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16067 16104])
+                    ("sleep_time" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16067 16104]))                  
+                :type "struct")
+                nil [16046 16107])
+            ("GameRunData" type
+               (:members 
+                  ( ("dig_index" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16418 16432])
+                    ("new_playeritem" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16434 16453])
+                    ("pointed_old" variable (:type ("PointedThing" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16455 16480])
+                    ("digging" variable (:type "bool") (reparse-symbol classsubparts) [16482 16495])
+                    ("punching" variable (:type "bool") (reparse-symbol classsubparts) [16497 16511])
+                    ("btn_down_for_dig" variable (:type "bool") (reparse-symbol classsubparts) [16513 16535])
+                    ("dig_instantly" variable (:type "bool") (reparse-symbol classsubparts) [16537 16556])
+                    ("digging_blocked" variable (:type "bool") (reparse-symbol classsubparts) [16558 16579])
+                    ("reset_jump_timer" variable (:type "bool") (reparse-symbol classsubparts) [16581 16603])
+                    ("nodig_delay_timer" variable (:type "float") (reparse-symbol classsubparts) [16605 16629])
+                    ("dig_time" variable (:type "float") (reparse-symbol classsubparts) [16631 16646])
+                    ("dig_time_complete" variable (:type "float") (reparse-symbol classsubparts) [16648 16672])
+                    ("repeat_place_timer" variable (:type "float") (reparse-symbol classsubparts) [16674 16699])
+                    ("object_hit_delay_timer" variable (:type "float") (reparse-symbol classsubparts) [16701 16730])
+                    ("time_from_last_punch" variable (:type "float") (reparse-symbol classsubparts) [16732 16759])
+                    ("selected_object" variable
+                       (:pointer 1
+                        :type ("ClientActiveObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16761 16797])
+                    ("jump_timer" variable (:type "float") (reparse-symbol classsubparts) [16800 16817])
+                    ("damage_flash" variable (:type "float") (reparse-symbol classsubparts) [16819 16838])
+                    ("update_draw_list_timer" variable (:type "float") (reparse-symbol classsubparts) [16840 16869])
+                    ("fog_range" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16872 16886])
+                    ("update_draw_list_last_cam_dir" variable (:type ("v3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16889 16923])
+                    ("time_of_day_smooth" variable (:type "float") (reparse-symbol classsubparts) [16926 16951]))                  
+                :type "struct")
+                nil [16396 16954])
+            ("Game" type
+               (:prototype t
+                :type "class")
+                nil [16956 16967])
+            ("ClientEventHandler" type (:type "struct") nil [16969 17059])
+            ("Game" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [17532 17539])
+                    ("Game" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Game" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17541 17548])
+                    ("Game" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [17550 17558])
+                    ("startup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("kill" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [17574 17585])
+                            ("input" variable
+                               (:pointer 1
+                                :type ("InputHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17589 17609])
+                            ("game_params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GameStartData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17613 17646])
+                            ("error_message" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17650 17677])
+                            ("reconnect" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [17681 17697])
+                            ("chat_backend" variable
+                               (:pointer 1
+                                :type ("ChatBackend" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17701 17727]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17561 17728])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [17731 17742])
+                    ("shutdown" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [17744 17760])
+                    ("protected" label nil (reparse-symbol classsubparts) [17762 17772])
+                    ("extendedResourceCleanup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [17775 17806])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("map_dir" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17844 17871])
+                            ("address" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17872 17899])
+                            ("port" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17903 17912])
+                            ("gamespec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SubgameSpec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17913 17941]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17834 17942])
+                    ("initSound" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17944 17961])
+                    ("createSingleplayerServer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("map_dir" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17993 18020])
+                            ("gamespec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SubgameSpec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18024 18052])
+                            ("port" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18053 18062]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17963 18063])
+                    ("createClient" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start_data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GameStartData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18104 18136]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18086 18137])
+                    ("initGui" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18139 18154])
+                    ("connectToServer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start_data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GameStartData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18200 18232])
+                            ("connect_ok" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [18236 18253])
+                            ("aborted" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [18254 18268]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18179 18269])
+                    ("getServerContent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aborted" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [18293 18307]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18271 18308])
+                    ("updateInteractTimers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18352 18362]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18326 18363])
+                    ("checkConnection" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18365 18388])
+                    ("handleCallbacks" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [18390 18413])
+                    ("processQueues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18415 18436])
+                    ("updateProfilers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stats" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RunStats" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18459 18481])
+                            ("draw_times" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FpsControl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18482 18511])
+                            ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18512 18522]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18438 18523])
+                    ("updateStats" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("RunStats" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18542 18558])
+                            ("draw_times" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FpsControl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18559 18588])
+                            ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18589 18599]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18525 18600])
+                    ("updateProfilerGraphs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("graph" variable
+                               (:pointer 1
+                                :type ("ProfilerGraph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18628 18649]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18602 18650])
+                    ("processUserInput" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18693 18703]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18671 18704])
+                    ("processKeyInput" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18706 18729])
+                    ("processItemSelection" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("new_playeritem" variable
+                               (:pointer 1
+                                :type ("u16" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18757 18777]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18731 18778])
+                    ("dropSelectedItem" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("single_item" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [18803 18827]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18781 18829])
+                    ("openInventory" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18831 18852])
+                    ("openConsole" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [18871 18883])
+                            ("line" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [18884 18908]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18854 18910])
+                    ("toggleFreeMove" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18912 18934])
+                    ("toggleFreeMoveAlt" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18936 18961])
+                    ("togglePitchMove" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18963 18986])
+                    ("toggleFast" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [18988 19006])
+                    ("toggleNoClip" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19008 19028])
+                    ("toggleCinematic" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19030 19053])
+                    ("toggleAutoforward" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19055 19080])
+                    ("toggleMinimap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shift_pressed" variable (:type "bool") (reparse-symbol arg-sub-list) [19102 19121]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19083 19122])
+                    ("toggleFog" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19124 19141])
+                    ("toggleDebug" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19143 19162])
+                    ("toggleUpdateCamera" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19164 19190])
+                    ("increaseViewRange" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19193 19218])
+                    ("decreaseViewRange" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19220 19245])
+                    ("toggleFullViewRange" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19247 19274])
+                    ("checkZoomEnabled" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19276 19300])
+                    ("updateCameraDirection" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19330 19353])
+                            ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [19354 19366]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19303 19367])
+                    ("updateCameraOrientation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19398 19421])
+                            ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [19422 19434]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19369 19435])
+                    ("updatePlayerControl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cam" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19462 19491]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19437 19492])
+                    ("step" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dtime" variable
+                               (:pointer 1
+                                :type ("f32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19504 19515]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19494 19516])
+                    ("processClientEvents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19543 19566]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19518 19567])
+                    ("updateCamera" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busy_time" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19587 19601])
+                            ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19602 19612]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19569 19613])
+                    ("updateSound" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19632 19642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19615 19643])
+                    ("processPlayerInteraction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19675 19685])
+                            ("show_hud" variable (:type "bool") (reparse-symbol arg-sub-list) [19686 19700])
+                            ("show_debug" variable (:type "bool") (reparse-symbol arg-sub-list) [19701 19717]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19645 19718])
+                    ("updatePointedThing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shootline" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("core::line3d" type
+                                     (:template-specifier 
+                                        ( ("f32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20282 20317])
+                            ("liquids_pointable" variable (:type "bool") (reparse-symbol arg-sub-list) [20318 20341])
+                            ("look_for_object" variable (:type "bool") (reparse-symbol arg-sub-list) [20345 20366])
+                            ("camera_offset" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3s16" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20367 20394]))                          
+                        :type ("PointedThing" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20246 20395])
+                    ("handlePointingAtNothing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("playerItem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20426 20454]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20397 20455])
+                    ("handlePointingAtNode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pointed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointedThing" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20483 20511])
+                            ("selected_item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20515 20546])
+                            ("hand_item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20547 20574])
+                            ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20575 20585]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20457 20586])
+                    ("handlePointingAtObject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pointed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointedThing" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20616 20644])
+                            ("playeritem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20645 20673])
+                            ("player_position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20677 20704])
+                            ("show_debug" variable (:type "bool") (reparse-symbol arg-sub-list) [20705 20721]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20588 20722])
+                    ("handleDigging" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pointed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointedThing" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20743 20771])
+                            ("nodepos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3s16" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20772 20793])
+                            ("selected_item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20797 20828])
+                            ("hand_item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20829 20856])
+                            ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20857 20867]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20724 20868])
+                    ("updateFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("graph" variable
+                               (:pointer 1
+                                :type ("ProfilerGraph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20887 20908])
+                            ("stats" variable
+                               (:pointer 1
+                                :type ("RunStats" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20909 20925])
+                            ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20926 20936])
+                            ("cam" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20940 20969]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20870 20970])
+                    ("limitFps" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fps_timings" variable
+                               (:pointer 1
+                                :type ("FpsControl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20996 21020])
+                            ("dtime" variable
+                               (:pointer 1
+                                :type ("f32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21021 21032]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20982 21033])
+                    ("showOverlayMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [21060 21076])
+                            ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [21077 21089])
+                            ("percent" variable (:type "int") (reparse-symbol arg-sub-list) [21090 21102])
+                            ("draw_clouds" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [21106 21129]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21036 21131])
+                    ("settingChangedCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("setting_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21169 21201])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [21202 21213]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21134 21214])
+                    ("readSettings" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21216 21236])
+                    ("isKeyDown" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("k" variable (:type ("GameKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21261 21275]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21239 21311])
+                    ("wasKeyDown" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("k" variable (:type ("GameKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21336 21350]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21313 21387])
+                    ("wasKeyPressed" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("k" variable (:type ("GameKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21415 21429]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21389 21469])
+                    ("wasKeyReleased" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("k" variable (:type ("GameKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21498 21512]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21471 21553])
+                    ("private" label nil (reparse-symbol classsubparts) [21614 21622])
+                    ("Flags" type
+                       (:members 
+                          ( ("force_fog_off" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21641 21668])
+                            ("disable_camera_update" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21671 21706]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [21624 21710])
+                    ("showDeathFormspec" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21713 21738])
+                    ("showPauseMenu" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21740 21761])
+                    ("handleClientEvent_None" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21817 21836])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21837 21860]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21789 21861])
+                    ("handleClientEvent_PlayerDamage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21899 21918])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21919 21942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21863 21943])
+                    ("handleClientEvent_PlayerForceMove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21984 22003])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22004 22027]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21945 22028])
+                    ("handleClientEvent_Deathscreen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22065 22084])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22085 22108]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22030 22109])
+                    ("handleClientEvent_ShowFormSpec" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22147 22166])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22167 22190]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22111 22191])
+                    ("handleClientEvent_ShowLocalFormSpec" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22234 22253])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22254 22277]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22193 22278])
+                    ("handleClientEvent_HandleParticleEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22323 22342])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22345 22368]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22280 22369])
+                    ("handleClientEvent_HudAdd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22401 22420])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22421 22444]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22371 22445])
+                    ("handleClientEvent_HudRemove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22480 22499])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22500 22523]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22447 22524])
+                    ("handleClientEvent_HudChange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22559 22578])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22579 22602]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22526 22603])
+                    ("handleClientEvent_SetSky" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22635 22654])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22655 22678]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22605 22679])
+                    ("handleClientEvent_SetSun" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22711 22730])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22731 22754]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22681 22755])
+                    ("handleClientEvent_SetMoon" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22788 22807])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22808 22831]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22757 22832])
+                    ("handleClientEvent_SetStars" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22866 22885])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22886 22909]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22834 22910])
+                    ("handleClientEvent_OverrideDayNigthRatio" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22957 22976])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22979 23002]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22912 23003])
+                    ("handleClientEvent_CloudParams" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("ClientEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23040 23059])
+                            ("cam" variable
+                               (:pointer 1
+                                :type ("CameraOrientation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23060 23083]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23005 23084])
+                    ("updateChat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23103 23113])
+                            ("screensize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v2u32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23114 23138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23087 23139])
+                    ("nodePlacement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("selected_def" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23161 23196])
+                            ("selected_item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ItemStack" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23197 23228])
+                            ("nodepos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3s16" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23231 23252])
+                            ("neighbourpos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3s16" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23253 23279])
+                            ("pointed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointedThing" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23280 23308])
+                            ("meta" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeMetadata" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23311 23336]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [23142 23337])
+                    ("clientEventHandler" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type ("ClientEventHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23339 23407])
+                    ("input" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("InputHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23410 23440])
+                    ("client" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23443 23468])
+                    ("server" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23470 23495])
+                    ("texture_src" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("IWritableTextureSource" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23498 23544])
+                    ("shader_src" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("IWritableShaderSource" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23546 23590])
+                    ("itemdef_manager" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("IWritableItemDefManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23667 23718])
+                    ("nodedef_manager" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("NodeDefManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23720 23762])
+                    ("soundfetcher" variable (:type ("GameOnDemandSoundFetcher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23765 23803])
+                    ("sound" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("ISoundManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23828 23859])
+                    ("sound_is_dummy" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [23861 23889])
+                    ("soundmaker" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("SoundMaker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23891 23924])
+                    ("chat_backend" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("ChatBackend" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23927 23963])
+                    ("m_chat_log_buf" variable (:type ("LogOutputBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23965 23996])
+                    ("eventmgr" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("EventManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23999 24032])
+                    ("quicktune" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("QuicktuneShortcutter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24034 24076])
+                    ("registration_confirmation_shown" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [24078 24123])
+                    ("m_game_ui" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("GameUI" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [24126 24160])
+                    ("gui_chat_console" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("GUIChatConsole" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24162 24205])
+                    ("draw_control" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("MapDrawControl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24230 24269])
+                    ("camera" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Camera" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24271 24296])
+                    ("clouds" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Clouds" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24298 24323])
+                    ("sky" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Sky" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24366 24385])
+                    ("hud" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Hud" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24434 24453])
+                    ("mapper" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("Minimap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24455 24481])
+                    ("runData" variable (:type ("GameRunData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24484 24504])
+                    ("m_flags" variable (:type ("Flags" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24506 24520])
+                    ("device" variable
+                       (:pointer 1
+                        :type ("IrrlichtDevice" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24647 24670])
+                    ("driver" variable
+                       (:pointer 1
+                        :type ("video::IVideoDriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24672 24700])
+                    ("smgr" variable
+                       (:pointer 1
+                        :type ("scene::ISceneManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24702 24729])
+                    ("kill" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [24731 24742])
+                    ("error_message" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24744 24771])
+                    ("reconnect_requested" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [24773 24799])
+                    ("skybox" variable
+                       (:pointer 1
+                        :type ("scene::ISceneNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24801 24827])
+                    ("simple_singleplayer_mode" variable (:type "bool") (reparse-symbol classsubparts) [24830 24860])
+                    ("crack_animation_length" variable (:type "int") (reparse-symbol classsubparts) [24913 24940])
+                    ("profiler_interval" variable (:type ("IntervalLimiter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24943 24977])
+                    ("m_cache_doubletap_jump" variable (:type "bool") (reparse-symbol classsubparts) [25244 25272])
+                    ("m_cache_enable_clouds" variable (:type "bool") (reparse-symbol classsubparts) [25274 25301])
+                    ("m_cache_enable_joysticks" variable (:type "bool") (reparse-symbol classsubparts) [25303 25333])
+                    ("m_cache_enable_particles" variable (:type "bool") (reparse-symbol classsubparts) [25335 25365])
+                    ("m_cache_enable_fog" variable (:type "bool") (reparse-symbol classsubparts) [25367 25391])
+                    ("m_cache_enable_noclip" variable (:type "bool") (reparse-symbol classsubparts) [25393 25420])
+                    ("m_cache_enable_free_move" variable (:type "bool") (reparse-symbol classsubparts) [25422 25452])
+                    ("m_cache_mouse_sensitivity" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25454 25485])
+                    ("m_cache_joystick_frustum_sensitivity" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25487 25529])
+                    ("m_repeat_place_time" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25531 25556])
+                    ("m_cache_cam_smoothing" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25558 25585])
+                    ("m_cache_fog_start" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25587 25610])
+                    ("m_invert_mouse" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [25613 25641])
+                    ("m_first_loop_after_window_activation" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [25643 25693])
+                    ("m_camera_offset_changed" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [25695 25732])
+                    ("m_does_lost_focus_pause_game" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [25735 25777])
+                    ("m_reset_HW_buffer_counter" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [25780 25814]))                  
+                :type "class")
+                nil [17519 25895])
+            ("Game" function
+               (:constructor-flag t
+                :parent "Game"
+                :type ("Game" type (:type "class") nil nil))
+                nil [25897 27254])
+            ("Game" function
+               (:destructor-flag t
+                :parent "Game"
+                :type "void")
+                nil [27436 28798])
+            ("startup" function
+               (:parent "Game"
+                :arguments 
+                  ( ("kill" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [28819 28830])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("InputHandler" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28833 28853])
+                    ("start_data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameStartData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28856 28888])
+                    ("error_message" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28891 28918])
+                    ("reconnect" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [28921 28937])
+                    ("chat_backend" variable
+                       (:pointer 1
+                        :type ("ChatBackend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28940 28966]))                  
+                :type "bool")
+                nil [28800 30074])
+            ("run" function
+               (:parent "Game"
+                :type "void")
+                nil [30077 32933])
+            ("shutdown" function
+               (:parent "Game"
+                :type "void")
+                nil [32936 34021])
+            ("init" function
+               (:parent "Game"
+                :arguments 
+                  ( ("map_dir" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34368 34395])
+                    ("address" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34398 34425])
+                    ("port" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34428 34437])
+                    ("gamespec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SubgameSpec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34440 34468]))                  
+                :type "bool")
+                nil [34349 35083])
+            ("initSound" function
+               (:parent "Game"
+                :type "bool")
+                nil [35085 35766])
+            ("createSingleplayerServer" function
+               (:parent "Game"
+                :arguments 
+                  ( ("map_dir" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35804 35831])
+                    ("gamespec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SubgameSpec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35834 35862])
+                    ("port" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35863 35872]))                  
+                :type "bool")
+                nil [35768 36739])
+            ("createClient" function
+               (:parent "Game"
+                :arguments 
+                  ( ("start_data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameStartData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36765 36797]))                  
+                :type "bool")
+                nil [36741 39187])
+            ("initGui" function
+               (:parent "Game"
+                :type "bool")
+                nil [39189 39680])
+            ("connectToServer" function
+               (:parent "Game"
+                :arguments 
+                  ( ("start_data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameStartData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39709 39741])
+                    ("connect_ok" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [39744 39761])
+                    ("connection_aborted" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [39762 39787]))                  
+                :type "bool")
+                nil [39682 43272])
+            ("getServerContent" function
+               (:parent "Game"
+                :arguments 
+                  ( ("aborted" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [43302 43316]))                  
+                :type "bool")
+                nil [43274 45360])
+            ("updateInteractTimers" function
+               (:parent "Game"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45723 45733]))                  
+                :type "void")
+                nil [45684 45939])
+            ("checkConnection" function
+               (:parent "Game"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [45999 46285])
+            ("handleCallbacks" function
+               (:parent "Game"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [46345 47249])
+            ("processQueues" function
+               (:parent "Game"
+                :type "void")
+                nil [47252 47381])
+            ("updateProfilers" function
+               (:parent "Game"
+                :arguments 
+                  ( ("stats" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RunStats" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47411 47433])
+                    ("draw_times" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FpsControl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47434 47463])
+                    ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47466 47476]))                  
+                :type "void")
+                nil [47384 48135])
+            ("updateStats" function
+               (:parent "Game"
+                :arguments 
+                  ( ("stats" variable
+                       (:pointer 1
+                        :type ("RunStats" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48160 48176])
+                    ("draw_times" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FpsControl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48177 48206])
+                    ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48209 48219]))                  
+                :type "void")
+                nil [48137 49044])
+            ("processUserInput" function
+               (:parent "Game"
+                :arguments 
+                  ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49250 49260]))                  
+                :type "void")
+                nil [49222 50289])
+            ("processKeyInput" function
+               (:parent "Game"
+                :type "void")
+                nil [50292 54793])
+            ("processItemSelection" function
+               (:parent "Game"
+                :arguments 
+                  ( ("new_playeritem" variable
+                       (:pointer 1
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54827 54847]))                  
+                :type "void")
+                nil [54795 55631])
+            ("dropSelectedItem" function
+               (:parent "Game"
+                :arguments 
+                  ( ("single_item" variable (:type "bool") (reparse-symbol arg-sub-list) [55662 55679]))                  
+                :type "void")
+                nil [55634 55904])
+            ("openInventory" function
+               (:parent "Game"
+                :type "void")
+                nil [55907 56795])
+            ("openConsole" function
+               (:parent "Game"
+                :arguments 
+                  ( ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [56821 56833])
+                    ("line" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [56834 56854]))                  
+                :type "void")
+                nil [56798 57213])
+            ("toggleFreeMove" function
+               (:parent "Game"
+                :type "void")
+                nil [57484 57917])
+            ("toggleFreeMoveAlt" function
+               (:parent "Game"
+                :type "void")
+                nil [57919 58066])
+            ("togglePitchMove" function
+               (:parent "Game"
+                :type "void")
+                nil [58069 58380])
+            ("toggleFast" function
+               (:parent "Game"
+                :type "void")
+                nil [58383 58933])
+            ("toggleNoClip" function
+               (:parent "Game"
+                :type "void")
+                nil [58936 59367])
+            ("toggleCinematic" function
+               (:parent "Game"
+                :type "void")
+                nil [59369 59664])
+            ("toggleAutoforward" function
+               (:parent "Game"
+                :type "void")
+                nil [59713 60052])
+            ("toggleMinimap" function
+               (:parent "Game"
+                :arguments 
+                  ( ("shift_pressed" variable (:type "bool") (reparse-symbol arg-sub-list) [60079 60098]))                  
+                :type "void")
+                nil [60054 61245])
+            ("toggleFog" function
+               (:parent "Game"
+                :type "void")
+                nil [61247 61511])
+            ("toggleDebug" function
+               (:parent "Game"
+                :type "void")
+                nil [61514 62726])
+            ("toggleUpdateCamera" function
+               (:parent "Game"
+                :type "void")
+                nil [62729 63000])
+            ("increaseViewRange" function
+               (:parent "Game"
+                :type "void")
+                nil [63003 63598])
+            ("decreaseViewRange" function
+               (:parent "Game"
+                :type "void")
+                nil [63601 64191])
+            ("toggleFullViewRange" function
+               (:parent "Game"
+                :type "void")
+                nil [64194 64468])
+            ("checkZoomEnabled" function
+               (:parent "Game"
+                :type "void")
+                nil [64471 64710])
+            ("updateCameraDirection" function
+               (:parent "Game"
+                :arguments 
+                  ( ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64746 64769])
+                    ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [64770 64782]))                  
+                :type "void")
+                nil [64713 65589])
+            ("updateCameraOrientation" function
+               (:parent "Game"
+                :arguments 
+                  ( ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65626 65649])
+                    ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [65650 65662]))                  
+                :type "void")
+                nil [65591 66659])
+            ("updatePlayerControl" function
+               (:parent "Game"
+                :arguments 
+                  ( ("cam" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66693 66722]))                  
+                :type "void")
+                nil [66662 69141])
+            ("step" function
+               (:parent "Game"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("dtime" variable
+                       (:pointer 1
+                        :type ("f32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69167 69178]))                  
+                :type "void")
+                nil [69144 69456])
+            ("Game::clientEventHandler" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+	{&Game::handleClientEvent_None},
+	{&Game::handleClientEvent_PlayerDamage},
+	{&Game::handleClientEvent_PlayerForceMove},
+	{&Game::handleClientEvent_Deathscreen},
+	{&Game::handleClientEvent_ShowFormSpec},
+	{&Game::handleClientEvent_ShowLocalFormSpec},
+	{&Game::handleClientEvent_HandleParticleEvent},
+	{&Game::handleClientEvent_HandleParticleEvent},
+	{&Game::handleClientEvent_HandleParticleEvent},
+	{&Game::handleClientEvent_HudAdd},
+	{&Game::handleClientEvent_HudRemove},
+	{&Game::handleClientEvent_HudChange},
+	{&Game::handleClientEvent_SetSky},
+	{&Game::handleClientEvent_SetSun},
+	{&Game::handleClientEvent_SetMoon},
+	{&Game::handleClientEvent_SetStars},
+	{&Game::handleClientEvent_OverrideDayNigthRatio},
+	{&Game::handleClientEvent_CloudParams},
+}"
+                :type ("ClientEventHandler" type (:type "class") nil nil))
+                nil [69458 70282])
+            ("handleClientEvent_None" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70318 70337])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70338 70361]))                  
+                :type "void")
+                nil [70284 70413])
+            ("handleClientEvent_PlayerDamage" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70457 70476])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70477 70500]))                  
+                :type "void")
+                nil [70415 71108])
+            ("handleClientEvent_PlayerForceMove" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71155 71174])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71175 71198]))                  
+                :type "void")
+                nil [71110 71304])
+            ("handleClientEvent_Deathscreen" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71347 71366])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71367 71390]))                  
+                :type "void")
+                nil [71306 71764])
+            ("handleClientEvent_ShowFormSpec" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71808 71827])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71828 71851]))                  
+                :type "void")
+                nil [71766 72609])
+            ("handleClientEvent_ShowLocalFormSpec" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72658 72677])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72678 72701]))                  
+                :type "void")
+                nil [72611 73109])
+            ("handleClientEvent_HandleParticleEvent" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73160 73179])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73182 73205]))                  
+                :type "void")
+                nil [73111 73342])
+            ("handleClientEvent_HudAdd" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73380 73399])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73400 73423]))                  
+                :type "void")
+                nil [73344 74862])
+            ("handleClientEvent_HudRemove" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74903 74922])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74923 74946]))                  
+                :type "void")
+                nil [74864 75072])
+            ("handleClientEvent_HudChange" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75113 75132])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75133 75156]))                  
+                :type "void")
+                nil [75074 76588])
+            ("handleClientEvent_SetSky" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76626 76645])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76646 76669]))                  
+                :type "void")
+                nil [76590 78285])
+            ("handleClientEvent_SetSun" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78323 78342])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78343 78366]))                  
+                :type "void")
+                nil [78287 78710])
+            ("handleClientEvent_SetMoon" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78749 78768])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78769 78792]))                  
+                :type "void")
+                nil [78712 79017])
+            ("handleClientEvent_SetStars" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79057 79076])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79077 79100]))                  
+                :type "void")
+                nil [79019 79336])
+            ("handleClientEvent_OverrideDayNigthRatio" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79389 79408])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79411 79434]))                  
+                :type "void")
+                nil [79338 79583])
+            ("handleClientEvent_CloudParams" function
+               (:parent "Game"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("ClientEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79626 79645])
+                    ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79646 79669]))                  
+                :type "void")
+                nil [79585 80082])
+            ("processClientEvents" function
+               (:parent "Game"
+                :arguments 
+                  ( ("cam" variable
+                       (:pointer 1
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80115 80138]))                  
+                :type "void")
+                nil [80084 80445])
+            ("updateChat" function
+               (:parent "Game"
+                :arguments 
+                  ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80469 80479])
+                    ("screensize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("v2u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80480 80504]))                  
+                :type "void")
+                nil [80447 81011])
+            ("updateCamera" function
+               (:parent "Game"
+                :arguments 
+                  ( ("busy_time" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81037 81051])
+                    ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81052 81062]))                  
+                :type "void")
+                nil [81013 82786])
+            ("updateSound" function
+               (:parent "Game"
+                :arguments 
+                  ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82812 82822]))                  
+                :type "void")
+                nil [82789 83982])
+            ("processPlayerInteraction" function
+               (:parent "Game"
+                :arguments 
+                  ( ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84021 84031])
+                    ("show_hud" variable (:type "bool") (reparse-symbol arg-sub-list) [84032 84046])
+                    ("show_debug" variable (:type "bool") (reparse-symbol arg-sub-list) [84047 84063]))                  
+                :type "void")
+                nil [83985 88855])
+            ("updatePointedThing" function
+               (:parent "Game"
+                :arguments 
+                  ( ("shootline" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("core::line3d" type
+                             (:template-specifier 
+                                ( ("f32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [88898 88933])
+                    ("liquids_pointable" variable (:type "bool") (reparse-symbol arg-sub-list) [88935 88958])
+                    ("look_for_object" variable (:type "bool") (reparse-symbol arg-sub-list) [88960 88981])
+                    ("camera_offset" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("v3s16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88983 89010]))                  
+                :type ("PointedThing" type (:type "class") nil nil))
+                nil [88858 92045])
+            ("handlePointingAtNothing" function
+               (:parent "Game"
+                :arguments 
+                  ( ("playerItem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92083 92111]))                  
+                :type "void")
+                nil [92048 92316])
+            ("handlePointingAtNode" function
+               (:parent "Game"
+                :arguments 
+                  ( ("pointed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointedThing" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92351 92379])
+                    ("selected_item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92381 92412])
+                    ("hand_item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92413 92440])
+                    ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92441 92451]))                  
+                :type "void")
+                nil [92319 94102])
+            ("nodePlacement" function
+               (:parent "Game"
+                :arguments 
+                  ( ("selected_def" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemDefinition" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94129 94164])
+                    ("selected_item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94166 94197])
+                    ("nodepos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("v3s16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94198 94219])
+                    ("neighbourpos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("v3s16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94220 94246])
+                    ("pointed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointedThing" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94248 94276])
+                    ("meta" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NodeMetadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94277 94302]))                  
+                :type "bool")
+                nil [94104 100298])
+            ("handlePointingAtObject" function
+               (:parent "Game"
+                :arguments 
+                  ( ("pointed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointedThing" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100334 100362])
+                    ("tool_item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100365 100392])
+                    ("player_position" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("v3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100393 100420])
+                    ("show_debug" variable (:type "bool") (reparse-symbol arg-sub-list) [100421 100437]))                  
+                :type "void")
+                nil [100300 101699])
+            ("handleDigging" function
+               (:parent "Game"
+                :arguments 
+                  ( ("pointed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointedThing" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101727 101755])
+                    ("nodepos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("v3s16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101756 101777])
+                    ("selected_item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101780 101811])
+                    ("hand_item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ItemStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101812 101839])
+                    ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101840 101850]))                  
+                :type "void")
+                nil [101702 105986])
+            ("updateFrame" function
+               (:parent "Game"
+                :arguments 
+                  ( ("graph" variable
+                       (:pointer 1
+                        :type ("ProfilerGraph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106011 106032])
+                    ("stats" variable
+                       (:pointer 1
+                        :type ("RunStats" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106033 106049])
+                    ("dtime" variable (:type ("f32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106050 106060])
+                    ("cam" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CameraOrientation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106063 106092]))                  
+                :type "void")
+                nil [105988 113840])
+            ("updateProfilerGraphs" function
+               (:parent "Game"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("graph" variable
+                       (:pointer 1
+                        :type ("ProfilerGraph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113925 113946]))                  
+                :type "void")
+                nil [113886 114033])
+            ("limitFps" function
+               (:parent "Game"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("fps_timings" variable
+                       (:pointer 1
+                        :type ("FpsControl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114304 114328])
+                    ("dtime" variable
+                       (:pointer 1
+                        :type ("f32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114329 114340]))                  
+                :type "void")
+                nil [114277 115607])
+            ("showOverlayMessage" function
+               (:parent "Game"
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [115639 115655])
+                    ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [115656 115668])
+                    ("percent" variable (:type "int") (reparse-symbol arg-sub-list) [115669 115681])
+                    ("draw_clouds" variable (:type "bool") (reparse-symbol arg-sub-list) [115682 115699]))                  
+                :type "void")
+                nil [115609 115851])
+            ("settingChangedCallback" function
+               (:parent "Game"
+                :arguments 
+                  ( ("setting_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115887 115919])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [115920 115931]))                  
+                :type "void")
+                nil [115853 115968])
+            ("readSettings" function
+               (:parent "Game"
+                :type "void")
+                nil [115970 117395])
+            ("extendedResourceCleanup" function
+               (:parent "Game"
+                :type "void")
+                nil [117733 118524])
+            ("showDeathFormspec" function
+               (:parent "Game"
+                :type "void")
+                nil [118526 119284])
+            ("GET_KEY_NAME" variable (:constant-flag t) nil [119294 119306])
+            ("showPauseMenu" function
+               (:parent "Game"
+                :type "void")
+                nil [119348 123924])
+            ("the_game" function
+               (:arguments 
+                  ( ("kill" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [124296 124307])
+                    ("input" variable
+                       (:pointer 1
+                        :type ("InputHandler" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124310 124330])
+                    ("start_data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameStartData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124333 124365])
+                    ("error_message" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124368 124395])
+                    ("chat_backend" variable
+                       (:reference 1
+                        :type ("ChatBackend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124398 124424])
+                    ("reconnect_requested" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [124427 124453]))                  
+                :type "void")
+                nil [124282 125392]))          
+      :file "game.cpp"
+      :pointmax 125393
+      :fsize 125392
+      :lastmodtime '(24606 33240 150107 60000)
+      :unmatched-syntax '((punctuation 17055 . 17056) (semantic-list 17019 . 17055) (semantic-list 17003 . 17019) (VOID 16998 . 17002) (semantic-list 12448 . 14917) (symbol 12438 . 12446) (semantic-list 12393 . 12437) (symbol 12379 . 12393) (VOID 12374 . 12378))
+      :lexical-table 
+        '(("GET_KEY_NAME" (spp-arg-list ("KEY") 119306 . 119311) . ((symbol "gettext" 119312 . 119319) (semantic-list "(getKeySetting(#KEY).name())" 119319 . 119347)))
+          ("SIZE_TAG" . ((string "\"size[11,5.5,true]\"" 15798 . 15817)))
+          )
+)
+    (semanticdb-table "semanticdb-table-e715d8"
+      :file "clientlauncher.h"
+      :fsize 1582
+      :lastmodtime '(24606 33240 147106 964000))
+    (semanticdb-table "semanticdb-table-17083d4"
+      :major-mode c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [874 891])
+            ("memory" include (:system-flag t) nil [892 909])
+            ("string" include (:system-flag t) nil [910 927])
+            ("irrlichttypes_extrabloated.h" include nil nil [928 967])
+            ("debug.h" include nil nil [968 986])
+            ("ITextureSource" type
+               (:prototype t
+                :type "class")
+                nil [988 1009])
+            ("Camera" type
+               (:prototype t
+                :type "class")
+                nil [1010 1023])
+            ("Client" type
+               (:prototype t
+                :type "class")
+                nil [1024 1037])
+            ("LocalPlayer" type
+               (:prototype t
+                :type "class")
+                nil [1038 1056])
+            ("Hud" type
+               (:prototype t
+                :type "class")
+                nil [1057 1067])
+            ("Minimap" type
+               (:prototype t
+                :type "class")
+                nil [1068 1082])
+            ("RenderingCore" type
+               (:prototype t
+                :type "class")
+                nil [1084 1104])
+            ("RenderingEngine" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1130 1137])
+                    ("RenderingEngine" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("eventReceiver" variable
+                               (:pointer 1
+                                :type ("IEventReceiver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1155 1185]))                          
+                        :type ("RenderingEngine" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1139 1186])
+                    ("RenderingEngine" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1188 1207])
+                    ("getWindowSize" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("v2u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1210 1238])
+                    ("setResizable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("resize" variable (:type "bool") (reparse-symbol arg-sub-list) [1258 1270]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1240 1271])
+                    ("getVideoDriver" function
+                       (:pointer 1
+                        :type ("video::IVideoDriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1274 1330])
+                    ("getVideoDriverName" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("irr::video::E_DRIVER_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1371 1402]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [1333 1403])
+                    ("getVideoDriverFriendlyName" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("irr::video::E_DRIVER_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1451 1482]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [1405 1483])
+                    ("getDisplayDensity" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "float")
+                        (reparse-symbol classsubparts) [1485 1518])
+                    ("getDisplaySize" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("v2u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1520 1550])
+                    ("setupTopLevelWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1578 1602]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1553 1603])
+                    ("setupTopLevelXorgWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1634 1658]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1605 1659])
+                    ("setWindowIcon" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1661 1682])
+                    ("setXorgWindowIconFromPath" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("icon_file" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1715 1744]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1684 1745])
+                    ("print_video_modes" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1747 1779])
+                    ("get_instance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("RenderingEngine" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1782 1844])
+                    ("get_filesystem" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("io::IFileSystem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1847 1996])
+                    ("get_video_driver" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("video::IVideoDriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1999 2155])
+                    ("get_mesh_cache" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("scene::IMeshCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2158 2327])
+                    ("get_scene_manager" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("scene::ISceneManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2330 2489])
+                    ("get_raw_device" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("irr::IrrlichtDevice" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2492 2628])
+                    ("get_timer_time" function
+                       (:typemodifiers ("static")
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2631 2814])
+                    ("get_gui_env" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("gui::IGUIEnvironment" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2817 2972])
+                    ("draw_load_screen" function
+                       (:typemodifiers ("inline" "static")
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3011 3036])
+                            ("guienv" variable
+                               (:pointer 1
+                                :type ("gui::IGUIEnvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3040 3069])
+                            ("tsrc" variable
+                               (:pointer 1
+                                :type ("ITextureSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3070 3091])
+                            ("dtime" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3095 3110])
+                            ("percent" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3112 3127])
+                            ("clouds" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3129 3147]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2975 3237])
+                    ("draw_menu_scene" function
+                       (:typemodifiers ("inline" "static")
+                        :arguments 
+                          ( ("guienv" variable
+                               (:pointer 1
+                                :type ("gui::IGUIEnvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3279 3308])
+                            ("dtime" variable (:type "float") (reparse-symbol arg-sub-list) [3309 3321])
+                            ("clouds" variable (:type "bool") (reparse-symbol arg-sub-list) [3322 3334]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3240 3396])
+                    ("draw_scene" function
+                       (:typemodifiers ("inline" "static")
+                        :arguments 
+                          ( ("skycolor" variable (:type ("video::SColor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3429 3452])
+                            ("show_hud" variable (:type "bool") (reparse-symbol arg-sub-list) [3453 3467])
+                            ("show_minimap" variable (:type "bool") (reparse-symbol arg-sub-list) [3471 3489])
+                            ("draw_wield_tool" variable (:type "bool") (reparse-symbol arg-sub-list) [3490 3511])
+                            ("draw_crosshair" variable (:type "bool") (reparse-symbol arg-sub-list) [3512 3532]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3399 3637])
+                    ("initialize" function
+                       (:typemodifiers ("inline" "static")
+                        :arguments 
+                          ( ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3670 3685])
+                            ("hud" variable
+                               (:pointer 1
+                                :type ("Hud" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3686 3695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3640 3742])
+                    ("finalize" function
+                       (:typemodifiers ("inline" "static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3745 3804])
+                    ("run" function
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3807 3923])
+                    ("getSupportedVideoModes" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("core::vector3d" type (:template-specifier 
+                                    ( ("u32" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3926 3991])
+                    ("getSupportedVideoDrivers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("irr::video::E_DRIVER_TYPE" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3993 4066])
+                    ("private" label nil (reparse-symbol classsubparts) [4068 4076])
+                    ("_draw_load_screen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4101 4126])
+                            ("guienv" variable
+                               (:pointer 1
+                                :type ("gui::IGUIEnvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4127 4156])
+                            ("tsrc" variable
+                               (:pointer 1
+                                :type ("ITextureSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4160 4181])
+                            ("dtime" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4182 4197])
+                            ("percent" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4199 4214])
+                            ("clouds" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4219 4237]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4078 4239])
+                    ("_draw_menu_scene" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("guienv" variable
+                               (:pointer 1
+                                :type ("gui::IGUIEnvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4264 4293])
+                            ("dtime" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4294 4309])
+                            ("clouds" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4314 4332]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4242 4334])
+                    ("_draw_scene" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("skycolor" variable (:type ("video::SColor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4354 4377])
+                            ("show_hud" variable (:type "bool") (reparse-symbol arg-sub-list) [4378 4392])
+                            ("show_minimap" variable (:type "bool") (reparse-symbol arg-sub-list) [4393 4411])
+                            ("draw_wield_tool" variable (:type "bool") (reparse-symbol arg-sub-list) [4415 4436])
+                            ("draw_crosshair" variable (:type "bool") (reparse-symbol arg-sub-list) [4437 4457]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4337 4458])
+                    ("_initialize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("client" variable
+                               (:pointer 1
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4478 4493])
+                            ("hud" variable
+                               (:pointer 1
+                                :type ("Hud" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4494 4503]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4461 4504])
+                    ("_finalize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4507 4524])
+                    ("core" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("RenderingCore" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4527 4563])
+                    ("m_device" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("irr::IrrlichtDevice" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4565 4605])
+                    ("driver" variable
+                       (:pointer 1
+                        :type ("irr::video::IVideoDriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4607 4640])
+                    ("s_singleton" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("RenderingEngine" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4642 4678]))                  
+                :type "class")
+                nil [1106 4681]))          
+      :file "renderingengine.h"
+      :pointmax 4682
+      :fsize 4681
+      :lastmodtime '(24606 33240 154107 188000)
+      :unmatched-syntax '((symbol 868 . 872) (symbol 861 . 867) (punctuation 860 . 861)))
+    (semanticdb-table "semanticdb-table-17083f4"
+      :file "camera.h"
+      :fsize 6432
+      :lastmodtime '(24606 33240 146106 932000))
+    (semanticdb-table "semanticdb-table-1708414"
+      :file "client.h"
+      :fsize 18223
+      :lastmodtime '(24606 33240 147106 964000))
+    (semanticdb-table "semanticdb-table-170844c"
+      :file "clientevent.h"
+      :fsize 2836
+      :lastmodtime '(24606 33240 147106 964000))
+    (semanticdb-table "semanticdb-table-1708484"
+      :file "gameui.h"
+      :fsize 3765
+      :lastmodtime '(24606 33240 150107 60000))
+    (semanticdb-table "semanticdb-table-17084bc"
+      :file "inputhandler.h"
+      :fsize 8321
+      :lastmodtime '(24606 33240 151107 92000))
+    (semanticdb-table "semanticdb-table-17084f4"
+      :file "tile.h"
+      :fsize 9275
+      :lastmodtime '(24606 33240 155107 220000))
+    (semanticdb-table "semanticdb-table-170852c"
+      :file "keys.h"
+      :fsize 1922
+      :lastmodtime '(24606 33240 151107 92000))
+    (semanticdb-table "semanticdb-table-1708564"
+      :file "joystick_controller.h"
+      :fsize 3721
+      :lastmodtime '(24606 33240 151107 92000))
+    (semanticdb-table "semanticdb-table-1708584"
+      :file "clientmap.h"
+      :fsize 3608
+      :lastmodtime '(24606 33240 148106 996000))
+    (semanticdb-table "semanticdb-table-17085a4"
+      :file "clouds.h"
+      :fsize 3135
+      :lastmodtime '(24606 33240 148106 996000))
+    (semanticdb-table "semanticdb-table-17085dc"
+      :file "content_cao.h"
+      :fsize 7351
+      :lastmodtime '(24606 33240 149107 28000))
+    (semanticdb-table "semanticdb-table-13ff2d8"
+      :file "event_manager.h"
+      :fsize 2257
+      :lastmodtime '(24606 33240 149107 28000))
+    (semanticdb-table "semanticdb-table-13ff2f8"
+      :file "fontengine.h"
+      :fsize 4545
+      :lastmodtime '(24606 33240 149107 28000))
+    (semanticdb-table "semanticdb-table-13ff468"
+      :file "minimap.h"
+      :fsize 4620
+      :lastmodtime '(24606 33240 153107 156000))
+    (semanticdb-table "semanticdb-table-13ff4b8"
+      :file "particles.h"
+      :fsize 4695
+      :lastmodtime '(24606 33240 153107 156000))
+    (semanticdb-table "semanticdb-table-13ff550"
+      :file "shader.h"
+      :fsize 4327
+      :lastmodtime '(24606 33240 154107 188000))
+    (semanticdb-table "semanticdb-table-13ff570"
+      :file "sky.h"
+      :fsize 7394
+      :lastmodtime '(24606 33240 154107 188000))
+    (semanticdb-table "semanticdb-table-13ff650"
+      :file "hud.h"
+      :fsize 4428
+      :lastmodtime '(24606 33240 151107 92000))
+    (semanticdb-table "semanticdb-table-13de044"
+      :file "sound.h"
+      :fsize 3597
+      :lastmodtime '(24606 33240 155107 220000)))
+  :file "!home!douidik!dev!minetest!src!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

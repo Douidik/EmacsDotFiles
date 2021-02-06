@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file-8d5ecc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-8d5ecc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-ac3bd8"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/errno.h" include (:system-flag t) nil [1 31]))          
+      :file "errno.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(24527 41639 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!asm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

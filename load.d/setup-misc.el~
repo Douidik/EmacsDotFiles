@@ -1,0 +1,7 @@
+(setq gc-cons-threshold (* 512 1024 1024)
+      gc-cons-percentage 0.6)
+
+(setq visible-bell t)
+(delete-selection-mode t)
+
+(provide 'setup-misc)

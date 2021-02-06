@@ -1,0 +1,75 @@
+;; Object semanticdb-project-database-file-a10208
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-a10208"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-a101e8"
+      :major-mode js-mode
+      :tags nil
+      :file "compile_commands.json"
+      :pointmax 1372
+      :fsize 352
+      :lastmodtime '(24603 419 368484 413000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 1372)))
+    (semanticdb-table "semanticdb-table-12ebb3c"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("default_target" function (:arguments ("all")) nil [164 184])
+            (".PHONY" function (:arguments ("default_target")) nil [185 209])
+            (".NOTPARALLEL" function nil nil [280 294])
+            (".SUFFIXES" function nil nil [470 481])
+            ("%" function (:arguments ("%,v")) nil [519 527])
+            ("%" function (:arguments ("RCS/%")) nil [565 575])
+            ("%" function (:arguments ("RCS/%,v")) nil [613 625])
+            ("%" function (:arguments ("SCCS/s.%")) nil [663 676])
+            ("%" function (:arguments ("s.%")) nil [714 722])
+            (".SUFFIXES" function (:arguments (".hpux_make_needs_suffix_list")) nil [724 764])
+            ("$(VERBOSE)" function nil nil [880 899])
+            ("cmake_force" function nil nil [939 952])
+            (".PHONY" function (:arguments ("cmake_force")) nil [953 974])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [1142 1158])
+            ("CMAKE_COMMAND" variable (:default-value ("/usr/bin/cmake")) nil [1183 1214])
+            ("RM" variable (:default-value ("/usr/bin/cmake" "-E" "rm" "-f")) nil [1247 1276])
+            ("EQUALS" variable (:default-value ("=")) nil [1312 1323])
+            ("CMAKE_SOURCE_DIR" variable (:default-value ("/home/douidik/dev/EasyCraft")) nil [1381 1428])
+            ("CMAKE_BINARY_DIR" variable (:default-value ("/home/douidik/dev/EasyCraft")) nil [1485 1532])
+            ("rebuild_cache" function nil nil [1695 1906])
+            (".PHONY" function (:arguments ("rebuild_cache")) nil [1906 1929])
+            ("rebuild_cache/fast" function (:arguments ("rebuild_cache")) nil [1974 2008])
+            (".PHONY" function (:arguments ("rebuild_cache/fast")) nil [2009 2037])
+            ("edit_cache" function nil nil [2079 2248])
+            (".PHONY" function (:arguments ("edit_cache")) nil [2248 2268])
+            ("edit_cache/fast" function (:arguments ("edit_cache")) nil [2310 2338])
+            (".PHONY" function (:arguments ("edit_cache/fast")) nil [2339 2364])
+            ("all" function (:arguments ("cmake_check_build_system")) nil [2387 2687])
+            (".PHONY" function (:arguments ("all")) nil [2687 2700])
+            ("clean" function nil nil [2725 2785])
+            (".PHONY" function (:arguments ("clean")) nil [2785 2800])
+            ("clean/fast" function (:arguments ("clean")) nil [2825 2843])
+            (".PHONY" function (:arguments ("clean/fast")) nil [2844 2864])
+            ("preinstall" function (:arguments ("all")) nil [2901 2975])
+            (".PHONY" function (:arguments ("preinstall")) nil [2975 2995])
+            ("preinstall/fast" function nil nil [3032 3107])
+            (".PHONY" function (:arguments ("preinstall/fast")) nil [3107 3132])
+            ("depend" function nil nil [3149 3268])
+            (".PHONY" function (:arguments ("depend")) nil [3268 3284])
+            ("Engine" function (:arguments ("cmake_check_build_system")) nil [3430 3517])
+            (".PHONY" function (:arguments ("Engine")) nil [3517 3533])
+            ("Engine/fast" function nil nil [3564 3686])
+            (".PHONY" function (:arguments ("Engine/fast")) nil [3686 3707])
+            ("Game" function (:arguments ("cmake_check_build_system")) nil [3851 3934])
+            (".PHONY" function (:arguments ("Game")) nil [3934 3948])
+            ("Game/fast" function nil nil [3979 4091])
+            (".PHONY" function (:arguments ("Game/fast")) nil [4091 4110])
+            ("help" function nil nil [4125 4387])
+            (".PHONY" function (:arguments ("help")) nil [4387 4401])
+            ("cmake_check_build_system" function nil nil [4708 4845])
+            (".PHONY" function (:arguments ("cmake_check_build_system")) nil [4845 4879]))          
+      :file "Makefile"
+      :pointmax 4880
+      :fsize 4879
+      :lastmodtime '(24603 419 365484 317000)
+      :unmatched-syntax nil))
+  :file "!home!douidik!dev!EasyCraft!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

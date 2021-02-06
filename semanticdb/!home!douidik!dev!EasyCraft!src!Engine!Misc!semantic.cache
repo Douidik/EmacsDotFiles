@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file-12140a8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-12140a8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1215084"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERIALIZABLE_FIELDS" variable (:constant-flag t) nil [44 63])
+            ("EasyCraft" type
+               (:members 
+                  ( ("Engine" type
+                       (:members 
+                          ( ("Serializable" type
+                               (:members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [345 355])
+                                    ("Serializable" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("Serializable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [364 379])
+                                    ("Serializable" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [388 404]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [320 411]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [254 413]))                  
+                :type "namespace")
+                nil [232 415]))          
+      :file "Serialization.hpp"
+      :pointmax 416
+      :fsize 408
+      :lastmodtime '(24606 37956 352772 78000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SERIALIZABLE_FIELDS" (spp-arg-list ("...") 63 . 68) . 
+              ((FRIEND "friend" 76 . 82) (CLASS "class" 83 . 88) (symbol "cereal" 89 . 95) (punctuation ":" 95 . 96) (punctuation ":" 96 . 97) (symbol "access" 97 . 103) (TEMPLATE "template" 112 . 120) (punctuation "<" 120 . 121) (CLASS "class" 121 . 126) (symbol "Archive" 127 . 134) (punctuation ">" 134 . 135) (VOID "void" 144 . 148) (symbol "save" 149 . 153) (semantic-list "(Archive &archive)" 153 . 171) (semantic-list "{		\\
+	archive(__VA_ARGS__);			\\
+    }" 173 . 210)))
+          )
+)
+    (semanticdb-table "semanticdb-table-265f800"
+      :major-mode c++-mode
+      :tags 
+        '( ("Serialization.hpp" include nil nil [1 29]))          
+      :file "Serialization.cpp"
+      :pointmax 30
+      :fsize 29
+      :lastmodtime '(24606 36618 967753 23000)
+      :unmatched-syntax nil))
+  :file "!home!douidik!dev!EasyCraft!src!Engine!Misc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

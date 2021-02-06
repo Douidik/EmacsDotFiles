@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file-179ceb0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-179ceb0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-179ce90"
+      :major-mode c++-mode
+      :tags 
+        '( ("Engine/Core/Logging.hpp" include nil nil [1 35])
+            ("main" function (:type "int") nil [37 136]))          
+      :file "Main.cpp"
+      :pointmax 137
+      :fsize 136
+      :lastmodtime '(24603 5810 241357 797000)
+      :unmatched-syntax nil))
+  :file "!home!douidik!dev!EasyCraft!src!Game!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

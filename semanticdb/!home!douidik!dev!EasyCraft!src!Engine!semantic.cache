@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file-286cc30
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-286cc30"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-286cc10"
+      :major-mode c++-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [15 35])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [36 59])
+            ("GLM_ENABLE_EXPERIMENTAL" variable (:constant-flag t) nil [69 92])
+            ("glm/glm.hpp" include (:system-flag t) nil [93 115])
+            ("cereal/cereal.hpp" include (:system-flag t) nil [117 145])
+            ("cereal/access.hpp" include (:system-flag t) nil [146 174])
+            ("array" include (:system-flag t) nil [176 192])
+            ("fstream" include (:system-flag t) nil [193 211])
+            ("vector" include (:system-flag t) nil [212 229])
+            ("string" include (:system-flag t) nil [230 247])
+            ("Core/Logging.hpp" include nil nil [249 276]))          
+      :file "EnginePCH.hpp"
+      :pointmax 277
+      :fsize 276
+      :lastmodtime '(24606 38022 274862 871000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLM_ENABLE_EXPERIMENTAL")
+          )
+))
+  :file "!home!douidik!dev!EasyCraft!src!Engine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

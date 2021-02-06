@@ -1,0 +1,4 @@
+(add-hook 'prog-mode (electric-pair-mode t))
+(add-hook 'prog-mode (linum-mode t))
+
+(provide 'setup-cpp-ide)

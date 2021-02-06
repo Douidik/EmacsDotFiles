@@ -1,0 +1,200 @@
+;; Object semanticdb-project-database-file-20fc960
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-20fc960"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-20f462c"
+      :major-mode c++-mode
+      :tags 
+        '( ("fmt/color.h" include (:system-flag t) nil [15 37])
+            ("fmt/core.h" include (:system-flag t) nil [38 59])
+            ("string" include (:system-flag t) nil [60 77])
+            ("EasyCraft" type
+               (:members 
+                  ( ("Engine" type
+                       (:members 
+                          ( ("LOG_INFO_STYLE" variable
+                               (:default-value "fg(fmt::color::white)"
+                                :type ("fmt::text_style" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [135 190])
+                            ("fmt::emphasis::italic" variable (:type "int") (reparse-symbol namespacesubparts) [268 290])
+                            ("fmt::emphasis::bold" variable (:type "int") (reparse-symbol namespacesubparts) [361 381])
+                            ("LogPrint" function
+                               (:arguments 
+                                  ( ("style" variable (:type ("fmt::text_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [429 451])
+                                    ("message" variable (:type ("std::string_view" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [452 477])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [478 484])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [488 493]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [415 613]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [101 616]))                  
+                :type "namespace")
+                nil [79 638])
+            ("EASYCRAFT_LOG_INFO" variable (:constant-flag t) nil [671 689])
+            ("EASYCRAFT_LOG_DEBUG" variable (:constant-flag t) nil [784 803])
+            ("EASYCRAFT_LOG_ERROR" variable (:constant-flag t) nil [899 918]))          
+      :file "Logging.hpp"
+      :pointmax 1006
+      :fsize 1005
+      :lastmodtime '(24603 5769 310088 808000)
+      :unmatched-syntax '((punctuation 486 . 487) (punctuation 485 . 486) (punctuation 484 . 485) (punctuation 483 . 484) (punctuation 413 . 414) (symbol 409 . 413) (punctuation 407 . 408) (punctuation 406 . 407) (punctuation 405 . 406) (TYPENAME 397 . 405) (punctuation 396 . 397) (TEMPLATE 387 . 395) (punctuation 359 . 360) (semantic-list 341 . 358) (symbol 339 . 341) (punctuation 337 . 338) (symbol 321 . 336) (symbol 310 . 320) (punctuation 309 . 310) (punctuation 308 . 309) (symbol 305 . 308) (symbol 295 . 304) (punctuation 266 . 267) (semantic-list 241 . 265) (symbol 239 . 241) (punctuation 237 . 238) (symbol 221 . 236) (symbol 210 . 220) (punctuation 209 . 210) (punctuation 208 . 209) (symbol 205 . 208) (symbol 195 . 204) (symbol 125 . 134) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("EASYCRAFT_LOG_ERROR" (spp-arg-list ("...") 918 . 923) . 
+              ((punctuation ":" 924 . 925) (punctuation ":" 925 . 926) (symbol "EasyCraft" 926 . 935) (punctuation ":" 935 . 936) (punctuation ":" 936 . 937) (symbol "Engine" 937 . 943) (punctuation ":" 943 . 944) (punctuation ":" 944 . 945) (symbol "LogPrint" 945 . 953) (semantic-list "(::EasyCraft::Engine::LOG_ERROR_STYLE, __VA_ARGS__)" 953 . 1004) (punctuation ";" 1004 . 1005)))
+          ("EASYCRAFT_LOG_DEBUG" (spp-arg-list ("...") 803 . 808) . 
+              ((punctuation ":" 809 . 810) (punctuation ":" 810 . 811) (symbol "EasyCraft" 811 . 820) (punctuation ":" 820 . 821) (punctuation ":" 821 . 822) (symbol "Engine" 822 . 828) (punctuation ":" 828 . 829) (punctuation ":" 829 . 830) (symbol "LogPrint" 830 . 838) (semantic-list "(::EasyCraft::Engine::LOG_DEBUG_STYLE, __VA_ARGS__)" 838 . 889) (punctuation ";" 889 . 890)))
+          ("EASYCRAFT_LOG_INFO" (spp-arg-list ("...") 689 . 694) . 
+              ((punctuation ":" 695 . 696) (punctuation ":" 696 . 697) (symbol "EasyCraft" 697 . 706) (punctuation ":" 706 . 707) (punctuation ":" 707 . 708) (symbol "Engine" 708 . 714) (punctuation ":" 714 . 715) (punctuation ":" 715 . 716) (symbol "LogPrint" 716 . 724) (semantic-list "(::EasyCraft::Engine::LOG_INFO_STYLE, __VA_ARGS__)" 724 . 774) (punctuation ";" 774 . 775)))
+          )
+)
+    (semanticdb-table "semanticdb-table-20f464c"
+      :major-mode c++-mode
+      :tags 
+        '( ("Logging.hpp" include nil nil [1 23]))          
+      :file "Logging.cpp"
+      :pointmax 24
+      :fsize 23
+      :lastmodtime '(24603 582 234709 301000)
+      :unmatched-syntax '((symbol 11 . 16) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 11 . 14) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-20f466c"
+      :major-mode c++-mode
+      :tags nil
+      :file "Logging.cpp~"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(24603 571 842375 906000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-20f468c"
+      :major-mode c++-mode
+      :tags 
+        '( ("EasyCraft" type
+               (:members 
+                  ( ("Engine" type
+                       (:members 
+                          ( ("Application" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [82 89])
+                                    ("Application" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("Application" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [95 109])
+                                    ("Application" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [115 130])
+                                    ("private" label nil (reparse-symbol classsubparts) [138 146]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [61 150]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [41 156]))                  
+                :type "namespace")
+                nil [15 158]))          
+      :file "Application.hpp"
+      :pointmax 163
+      :fsize 162
+      :lastmodtime '(24605 41950 366082 699000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-20f46ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("EasyCraft" type
+               (:members 
+                  ( ("Engine" type
+                       (:members 
+                          ( ("Context" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [80 87])
+                                    ("Context" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("Context" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [96 106])
+                                    ("Context" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [115 126])
+                                    ("private" label nil (reparse-symbol classsubparts) [132 140]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [60 149]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [37 151]))                  
+                :type "namespace")
+                nil [15 153]))          
+      :file "Context.hpp"
+      :pointmax 154
+      :fsize 151
+      :lastmodtime '(24606 30023 659170 479000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-20fc900"
+      :major-mode c++-mode
+      :tags 
+        '( ("Context.hpp" include nil nil [1 23])
+            ("EasyCraft" type
+               (:members 
+                  ( ("Engine" type (:type "namespace") (reparse-symbol namespacesubparts) [47 72]))                  
+                :type "namespace")
+                nil [25 74]))          
+      :file "Context.cpp"
+      :pointmax 75
+      :fsize 74
+      :lastmodtime '(24605 40622 449206 680000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-20fc920"
+      :major-mode c++-mode
+      :tags 
+        '( ("Application.hpp" include nil nil [1 27]))          
+      :file "Application.cpp"
+      :pointmax 28
+      :fsize 27
+      :lastmodtime '(24605 43304 775070 138000)
+      :unmatched-syntax '((symbol 1 . 9)))
+    (semanticdb-table "semanticdb-table-20fc940"
+      :major-mode c++-mode
+      :tags 
+        '( ("EasyCraft" type
+               (:members 
+                  ( ("Engine" type
+                       (:members 
+                          ( ("Window" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [79 86])
+                                    ("Window" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [88 97])
+                                    ("Window" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [99 109])
+                                    ("private" label nil (reparse-symbol classsubparts) [116 124]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [60 133]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [37 135]))                  
+                :type "namespace")
+                nil [15 137]))          
+      :file "Window.hpp"
+      :pointmax 138
+      :fsize 288
+      :lastmodtime '(24606 36423 500492 405000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-326e104"
+      :major-mode c++-mode
+      :tags 
+        '( ("Window.hpp" include nil nil [1 22]))          
+      :file "Window.cpp"
+      :pointmax 23
+      :fsize 22
+      :lastmodtime '(24606 36326 354377 559000)
+      :unmatched-syntax nil))
+  :file "!home!douidik!dev!EasyCraft!src!Engine!Core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

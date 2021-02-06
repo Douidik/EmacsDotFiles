@@ -1,0 +1,1330 @@
+;; Object semanticdb-project-database-file-1029f68
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1029f68"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1029f90"
+      :file "irrlichttypes.h"
+      :fsize 2115
+      :lastmodtime '(24606 33240 168107 636000))
+    (semanticdb-table "semanticdb-table-1029fcc"
+      :file "irr_v3d.h"
+      :fsize 1025
+      :lastmodtime '(24606 33240 167107 604000))
+    (semanticdb-table "semanticdb-table-15981e4"
+      :file "exceptions.h"
+      :fsize 3139
+      :lastmodtime '(24606 33240 160107 380000))
+    (semanticdb-table "semanticdb-table-1598210"
+      :file "mapnode.h"
+      :fsize 8298
+      :lastmodtime '(24606 33240 173107 796000))
+    (semanticdb-table "semanticdb-table-81fcf4"
+      :major-mode c++-mode
+      :tags 
+        '( ("voxel.h" include nil nil [786 804])
+            ("map.h" include nil nil [805 821])
+            ("gettime.h" include nil nil [822 842])
+            ("nodedef.h" include nil nil [843 863])
+            ("util/directiontables.h" include nil nil [864 897])
+            ("util/timetaker.h" include nil nil [898 925])
+            ("cstring" include (:system-flag t) nil [926 944])
+            ((("addarea_time" 0 nil nil (1003 1004))) variable (:type ("u64" type (:type "class") nil nil)) nil [984 1005])
+            ((("emerge_time" 0 nil nil (1024 1025))) variable (:type ("u64" type (:type "class") nil nil)) nil [1006 1026])
+            ((("emerge_load_time" 0 nil nil (1050 1051))) variable (:type ("u64" type (:type "class") nil nil)) nil [1027 1052])
+            ((("clearflag_time" 0 nil nil (1074 1075))) variable (:type ("u64" type (:type "class") nil nil)) nil [1053 1076])
+            ("VoxelManipulator" function
+               (:destructor-flag t
+                :parent "VoxelManipulator"
+                :type "void")
+                nil [1078 1129])
+            ("clear" function
+               (:parent "VoxelManipulator"
+                :type "void")
+                nil [1131 1291])
+            ((("VoxelManipulator::ContentIgnoreNode" 0 nil nil (8314 8337))) variable (:constant-flag t :type ("MapNode" type (:type "class") nil nil)) nil [8262 8338]))          
+      :file "voxel.cpp"
+      :pointmax 8346
+      :fsize 8345
+      :lastmodtime '(24606 33240 198108 596000)
+      :unmatched-syntax '((semantic-list 7379 . 8260) (semantic-list 7368 . 7378) (symbol 7359 . 7368) (punctuation 7358 . 7359) (punctuation 7357 . 7358) (symbol 7341 . 7357) (VOID 7336 . 7340) (semantic-list 6900 . 7260) (semantic-list 6806 . 6899) (symbol 6800 . 6806) (punctuation 6799 . 6800) (punctuation 6798 . 6799) (symbol 6782 . 6798) (VOID 6777 . 6781) (semantic-list 4958 . 6775) (semantic-list 4865 . 4957) (symbol 4857 . 4865) (punctuation 4856 . 4857) (punctuation 4855 . 4856) (symbol 4839 . 4855) (VOID 4834 . 4838) (semantic-list 3016 . 4832) (semantic-list 2992 . 3015) (symbol 2985 . 2992) (punctuation 2984 . 2985) (punctuation 2983 . 2984) (symbol 2967 . 2983) (VOID 2962 . 2966) (semantic-list 1389 . 2960) (semantic-list 1321 . 1388) (symbol 1316 . 1321) (punctuation 1315 . 1316) (punctuation 1314 . 1315) (symbol 1298 . 1314) (VOID 1293 . 1297)))
+    (semanticdb-table "semanticdb-table-10efa28"
+      :file "map.h"
+      :fsize 11696
+      :lastmodtime '(24606 33240 169107 668000))
+    (semanticdb-table "semanticdb-table-10efa64"
+      :file "gettime.h"
+      :fsize 1236
+      :lastmodtime '(24606 33240 160107 380000))
+    (semanticdb-table "semanticdb-table-10efa90"
+      :file "nodedef.h"
+      :fsize 22639
+      :lastmodtime '(24606 33240 177107 924000))
+    (semanticdb-table "semanticdb-table-cecc98"
+      :major-mode c++-mode
+      :tags 
+        '( ("voxelalgorithms.h" include nil nil [791 819])
+            ("nodedef.h" include nil nil [820 840])
+            ("mapblock.h" include nil nil [841 862])
+            ("map.h" include nil nil [863 879])
+            ("voxalgo" type
+               (:members 
+                  ( ("direction" type
+                       (:typedef ("u8" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1047 1068])
+                    ("relative_v3" type
+                       (:typedef ("v3s16" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1204 1230])
+                    ("mapblock_v3" type
+                       (:typedef ("v3s16" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1347 1373])
+                    ("ChangingLight" type
+                       (:members 
+                          ( ("rel_position" variable (:type ("relative_v3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1522 1547])
+                            ("block_position" variable (:type ("mapblock_v3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1584 1611])
+                            ("block" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("MapBlock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1647 1670])
+                            ("source_direction" variable
+                               (:default-value "6"
+                                :type ("direction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1761 1792])
+                            ("ChangingLight" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rel_pos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("relative_v3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1838 1865])
+                                    ("block_pos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("mapblock_v3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1866 1895])
+                                    ("b" variable
+                                       (:pointer 1
+                                        :type ("MapBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1898 1910])
+                                    ("source_dir" variable (:type ("direction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1911 1932]))                                  
+                                :type ("ChangingLight" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1824 2035]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1445 2038])
+                    ("LightQueue" type
+                       (:members 
+                          ( ("lights" variable
+                               (:dereference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ChangingLight" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2293 2342])
+                            ("max_light" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2400 2413])
+                            ("LightQueue" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("reserve" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2533 2548]))                                  
+                                :type ("LightQueue" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2522 2654])
+                            ("next" function
+                               (:arguments 
+                                  ( ("light" variable
+                                       (:reference 1
+                                        :type ("u8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3013 3023])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("ChangingLight" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3024 3044]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3003 3259])
+                            ("push" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("light" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3440 3449])
+                                    ("rel_pos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("relative_v3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3450 3477])
+                                    ("block_pos" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("mapblock_v3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3480 3509])
+                                    ("block" variable
+                                       (:pointer 1
+                                        :type ("MapBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3510 3526])
+                                    ("source_dir" variable (:type ("direction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3529 3550]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3423 3655]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2227 3658])
+                    ("UnlightQueue" type
+                       (:typedef ("LightQueue" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3926 3958])
+                    ("ReLightQueue" type
+                       (:typedef ("LightQueue" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4318 4350])
+                    ("neighbor_dirs" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "{
+	v3s16(1, 0, 0), // right
+	v3s16(0, 1, 0), // top
+	v3s16(0, 0, 1), // back
+	v3s16(0, 0, -1), // front
+	v3s16(0, -1, 0), // bottom
+	v3s16(-1, 0, 0), // left
+}"
+                        :type ("v3s16" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4461 4659])
+                    ("step_rel_block_pos" function
+                       (:arguments 
+                          ( ("dir" variable (:type ("direction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4945 4959])
+                            ("rel_pos" variable
+                               (:reference 1
+                                :type ("relative_v3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4960 4981])
+                            ("block_pos" variable
+                               (:reference 1
+                                :type ("mapblock_v3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4983 5006]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4921 5884])
+                    ("unspread_light" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6349 6358])
+                            ("nodemgr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6359 6389])
+                            ("bank" variable (:type ("LightBank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6390 6405])
+                            ("from_nodes" variable
+                               (:reference 1
+                                :type ("UnlightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6407 6432])
+                            ("light_sources" variable
+                               (:reference 1
+                                :type ("ReLightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6433 6461])
+                            ("modified_blocks" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6463 6507]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6329 9677])
+                    ("spread_light" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10173 10182])
+                            ("nodemgr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10183 10213])
+                            ("bank" variable (:type ("LightBank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10214 10229])
+                            ("light_sources" variable
+                               (:reference 1
+                                :type ("LightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10231 10257])
+                            ("modified_blocks" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10259 10303]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10155 12127])
+                    ("SunlightPropagationUnit" type
+                       (:members 
+                          ( ("relative_pos" variable (:type ("v2s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12162 12181])
+                            ("is_sunlit" variable (:type "bool") (reparse-symbol classsubparts) [12183 12198])
+                            ("SunlightPropagationUnit" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("relpos" variable (:type ("v2s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12225 12238])
+                                    ("sunlit" variable (:type "bool") (reparse-symbol arg-sub-list) [12239 12251]))                                  
+                                :type ("SunlightPropagationUnit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [12201 12300]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [12129 12303])
+                    ("SunlightPropagationData" type
+                       (:members 
+                          ( ("data" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("SunlightPropagationUnit" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [12338 12380])
+                            ("target_block" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12382 12401]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [12305 12404])
+                    ("is_sunlight_above" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12545 12554])
+                            ("pos" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12555 12565])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12566 12593]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [12522 13661])
+                    ("banks" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "{ LIGHTBANK_DAY, LIGHTBANK_NIGHT }"
+                        :type ("LightBank" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13663 13731])
+                    ("update_lighting_nodes" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13760 13769])
+                            ("oldnodes" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type (:template-specifier 
+                                            ( ("v3s16" type nil nil nil)
+                                              ("MapNode" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13771 13821])
+                            ("modified_blocks" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13823 13867]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13733 19385])
+                    ("block_borders" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :default-value "{
+	VoxelArea(v3s16(15, 0, 0), v3s16(15, 15, 15)), //X+
+	VoxelArea(v3s16(0, 15, 0), v3s16(15, 15, 15)), //Y+
+	VoxelArea(v3s16(0, 0, 15), v3s16(15, 15, 15)), //Z+
+	VoxelArea(v3s16(0, 0, 0), v3s16(15, 15, 0)),   //Z-
+	VoxelArea(v3s16(0, 0, 0), v3s16(15, 0, 15)),   //Y-
+	VoxelArea(v3s16(0, 0, 0), v3s16(0, 15, 15))    //X-
+}"
+                        :type ("VoxelArea" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19488 19844])
+                    ("is_light_locally_correct" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20086 20095])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20096 20123])
+                            ("bank" variable (:type ("LightBank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20125 20140])
+                            ("pos" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20141 20151]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [20056 20759])
+                    ("update_block_border_lighting" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20795 20804])
+                            ("block" variable
+                               (:pointer 1
+                                :type ("MapBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20805 20821])
+                            ("modified_blocks" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20823 20867]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20761 23377])
+                    ("fill_with_sunlight" function
+                       (:arguments 
+                          ( ("vm" variable
+                               (:pointer 1
+                                :type ("MMVManip" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23933 23946])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23947 23974])
+                            ("offset" variable (:type ("v2s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23975 23988])
+                            ("light" variable
+                               (:dereference 2
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [23990 24031]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23909 25287])
+                    ("is_sunlight_above_block" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("ServerMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25629 25644])
+                            ("pos" variable (:type ("mapblock_v3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25645 25661])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25663 25690])
+                            ("light" variable
+                               (:dereference 2
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [25691 25732]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25600 26857])
+                    ("propagate_block_sunlight" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27219 27228])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27229 27256])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("SunlightPropagationData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27258 27288])
+                            ("unlight" variable
+                               (:pointer 1
+                                :type ("UnlightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27289 27311])
+                            ("relight" variable
+                               (:pointer 1
+                                :type ("ReLightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27312 27334]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [27189 29324])
+                    ("block_pad" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :default-value "{
+	VoxelArea(v3s16(15, 0, 0), v3s16(15, 15, 15)), //X+
+	VoxelArea(v3s16(1, 15, 0), v3s16(14, 15, 15)), //Y+
+	VoxelArea(v3s16(1, 1, 15), v3s16(14, 14, 15)), //Z+
+	VoxelArea(v3s16(1, 1, 0), v3s16(14, 14, 0)),   //Z-
+	VoxelArea(v3s16(1, 0, 0), v3s16(14, 0, 15)),   //Y-
+	VoxelArea(v3s16(0, 0, 0), v3s16(0, 15, 15))    //X-
+}"
+                        :type ("VoxelArea" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29456 29808])
+                    ("finish_bulk_light_update" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("Map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30653 30662])
+                            ("minblock" variable (:type ("mapblock_v3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30663 30684])
+                            ("maxblock" variable (:type ("mapblock_v3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30686 30707])
+                            ("unlight" variable
+                               (:dereference 1
+                                :type ("UnlightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30708 30732])
+                            ("relight" variable
+                               (:dereference 1
+                                :type ("ReLightQueue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30733 30757])
+                            ("modified_blocks" variable
+                               (:pointer 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [30759 30803]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30623 32947])
+                    ("blit_back_with_light" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("ServerMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32975 32990])
+                            ("vm" variable
+                               (:pointer 1
+                                :type ("MMVManip" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32991 33004])
+                            ("modified_blocks" variable
+                               (:pointer 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33006 33050]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32949 36540])
+                    ("fill_with_sunlight" function
+                       (:arguments 
+                          ( ("block" variable
+                               (:pointer 1
+                                :type ("MapBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36958 36974])
+                            ("ndef" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("NodeDefManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36975 37002])
+                            ("light" variable
+                               (:dereference 2
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [37004 37045]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36934 37893])
+                    ("repair_block_light" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :type ("ServerMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37919 37934])
+                            ("block" variable
+                               (:pointer 1
+                                :type ("MapBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37935 37951])
+                            ("modified_blocks" variable
+                               (:pointer 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("v3s16" type nil nil nil)
+                                          ("MapBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37953 37997]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [37895 40457])
+                    ("VoxelLineIterator" function
+                       (:constructor-flag t
+                        :parent "VoxelLineIterator"
+                        :arguments 
+                          ( ("start_position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40496 40522])
+                            ("line_vector" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("v3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40523 40546]))                          
+                        :type ("VoxelLineIterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40459 42077])
+                    ("next" function
+                       (:parent "VoxelLineIterator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [42079 42679])
+                    ("getIndex" function
+                       (:parent "VoxelLineIterator"
+                        :arguments 
+                          ( ("voxel" variable (:type ("v3s16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42713 42725]))                          
+                        :type ("s16" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [42681 42849]))                  
+                :type "namespace")
+                nil [881 42852]))          
+      :file "voxelalgorithms.cpp"
+      :pointmax 42875
+      :fsize 42874
+      :lastmodtime '(24606 33240 198108 596000)
+      :unmatched-syntax '((punctuation 1820 . 1821) (DEFAULT 1813 . 1820) (punctuation 1811 . 1812) (semantic-list 1808 . 1810) (symbol 1795 . 1808) (punctuation 1820 . 1821) (DEFAULT 1813 . 1820) (punctuation 1811 . 1812) (semantic-list 1808 . 1810) (symbol 1795 . 1808)))
+    (semanticdb-table "semanticdb-table-f558f0"
+      :file "voxelalgorithms.h"
+      :fsize 4608
+      :lastmodtime '(24606 33240 198108 596000))
+    (semanticdb-table "semanticdb-table-f55924"
+      :file "mapblock.h"
+      :fsize 14955
+      :lastmodtime '(24606 33240 170107 700000))
+    (semanticdb-table "semanticdb-table-c09ff0"
+      :major-mode c++-mode
+      :tags 
+        '( ("irrlichttypes.h" include nil nil [791 817])
+            ("irrlicht.h" include nil nil [888 909])
+            ("irrlichttypes_extrabloated.h" include nil nil [926 965])
+            ("chat_interface.h" include nil nil [966 993])
+            ("debug.h" include nil nil [994 1012])
+            ("unittest/test.h" include nil nil [1013 1039])
+            ("server.h" include nil nil [1040 1059])
+            ("filesys.h" include nil nil [1060 1080])
+            ("version.h" include nil nil [1081 1101])
+            ("client/game.h" include nil nil [1102 1126])
+            ("defaultsettings.h" include nil nil [1127 1155])
+            ("gettext.h" include nil nil [1156 1176])
+            ("log.h" include nil nil [1177 1193])
+            ("util/quicktune.h" include nil nil [1194 1221])
+            ("httpfetch.h" include nil nil [1222 1244])
+            ("gameparams.h" include nil nil [1245 1268])
+            ("database/database.h" include nil nil [1269 1299])
+            ("config.h" include nil nil [1300 1319])
+            ("player.h" include nil nil [1320 1339])
+            ("porting.h" include nil nil [1340 1360])
+            ("network/socket.h" include nil nil [1361 1388])
+            ("gui/guiMainMenu.h" include nil nil [1462 1490])
+            ("client/clientlauncher.h" include nil nil [1491 1525])
+            ("gui/guiEngine.h" include nil nil [1526 1552])
+            ("gui/mainmenumanager.h" include nil nil [1553 1585])
+            ("lua.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1748 1765])
+            ("DEBUGFILE" variable (:constant-flag t) nil [2016 2025])
+            ("DEFAULT_SERVER_PORT" variable (:constant-flag t) nil [2046 2065])
+            ("OptionList" type
+               (:typedef ("std::map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("ValueSpec" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [2073 2125])
+            ("get_cmdline_opts" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2323 2332])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2333 2346])
+                    ("cmd_args" variable
+                       (:pointer 1
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2347 2366]))                  
+                :type "bool")
+                nil [2294 2367])
+            ("set_allowed_options" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("allowed_options" variable
+                       (:pointer 1
+                        :type ("OptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2400 2428]))                  
+                :type "void")
+                nil [2368 2429])
+            ("print_help" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("allowed_options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("OptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2454 2488]))                  
+                :type "void")
+                nil [2431 2489])
+            ("print_allowed_options" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("allowed_options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("OptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2524 2558]))                  
+                :type "void")
+                nil [2490 2559])
+            ("print_version" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [2560 2588])
+            ("print_worldspecs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("worldspecs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("WorldSpec" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2618 2659])
+                    ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2661 2678])
+                    ("print_name" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [2679 2701])
+                    ("print_path" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [2703 2725]))                  
+                :type "void")
+                nil [2589 2727])
+            ("print_modified_quicktune_values" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [2728 2774])
+            ("list_game_ids" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [2776 2804])
+            ("list_worlds" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("print_name" variable (:type "bool") (reparse-symbol arg-sub-list) [2829 2845])
+                    ("print_path" variable (:type "bool") (reparse-symbol arg-sub-list) [2846 2862]))                  
+                :type "void")
+                nil [2805 2863])
+            ("setup_log_params" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2893 2918]))                  
+                :type "bool")
+                nil [2864 2919])
+            ("create_userdata_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "bool")
+                nil [2920 2955])
+            ("init_common" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2980 3005])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3006 3015])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3016 3029]))                  
+                :type "bool")
+                nil [2956 3030])
+            ("startup_message" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [3031 3061])
+            ("read_config_file" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3091 3116]))                  
+                :type "bool")
+                nil [3062 3117])
+            ("init_log_streams" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3147 3172]))                  
+                :type "void")
+                nil [3118 3173])
+            ("game_configure" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3202 3226])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3227 3252]))                  
+                :type "bool")
+                nil [3175 3253])
+            ("game_configure_port" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3286 3310])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3311 3336]))                  
+                :type "void")
+                nil [3254 3337])
+            ("game_configure_world" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3372 3396])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3397 3422]))                  
+                :type "bool")
+                nil [3339 3423])
+            ("get_world_from_cmdline" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3459 3483])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3484 3509]))                  
+                :type "bool")
+                nil [3424 3510])
+            ("get_world_from_config" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3545 3569])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3570 3595]))                  
+                :type "bool")
+                nil [3511 3596])
+            ("auto_select_world" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3627 3651]))                  
+                :type "bool")
+                nil [3597 3652])
+            ("get_clean_world_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3693 3717]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [3653 3718])
+            ("game_configure_subgame" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3755 3779])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3780 3805]))                  
+                :type "bool")
+                nil [3720 3806])
+            ("get_game_from_cmdline" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3841 3865])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3866 3891]))                  
+                :type "bool")
+                nil [3807 3892])
+            ("determine_subgame" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3923 3947]))                  
+                :type "bool")
+                nil [3893 3948])
+            ("run_dedicated_server" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3983 4013])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4014 4039]))                  
+                :type "bool")
+                nil [3950 4040])
+            ("migrate_map_database" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4074 4104])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4105 4130]))                  
+                :type "bool")
+                nil [4041 4131])
+            ("file_log_output" variable (:type ("FileLogOutput" type (:type "class") nil nil)) nil [4208 4238])
+            ("allowed_options" variable
+               (:typemodifiers ("static")
+                :type ("OptionList" type (:type "class") nil nil))
+                nil [4240 4274])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4285 4294])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4295 4308]))                  
+                :type "int")
+                nil [4276 7188])
+            ("get_cmdline_opts" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7399 7408])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7409 7422])
+                    ("cmd_args" variable
+                       (:pointer 1
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7423 7442]))                  
+                :type "bool")
+                nil [7370 7552])
+            ("set_allowed_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("allowed_options" variable
+                       (:pointer 1
+                        :type ("OptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7586 7614]))                  
+                :type "void")
+                nil [7554 11730])
+            ("print_help" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("allowed_options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("OptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11755 11789]))                  
+                :type "void")
+                nil [11732 11884])
+            ("print_allowed_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("allowed_options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("OptionList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11920 11954]))                  
+                :type "void")
+                nil [11886 12330])
+            ("print_version" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [12332 12740])
+            ("list_game_ids" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [12742 12907])
+            ("list_worlds" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("print_name" variable (:type "bool") (reparse-symbol arg-sub-list) [12933 12949])
+                    ("print_path" variable (:type "bool") (reparse-symbol arg-sub-list) [12950 12966]))                  
+                :type "void")
+                nil [12909 13146])
+            ("print_worldspecs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("worldspecs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("WorldSpec" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13177 13218])
+                    ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13220 13237])
+                    ("print_name" variable (:type "bool") (reparse-symbol arg-sub-list) [13238 13254])
+                    ("print_path" variable (:type "bool") (reparse-symbol arg-sub-list) [13255 13271]))                  
+                :type "void")
+                nil [13148 13619])
+            ("print_modified_quicktune_values" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [13621 14054])
+            ("setup_log_params" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14085 14110]))                  
+                :type "bool")
+                nil [14056 15646])
+            ("create_userdata_path" function
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [15648 15951])
+            ("init_common" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15977 16002])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16003 16012])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16013 16026]))                  
+                :type "bool")
+                nil [15953 16542])
+            ("startup_message" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [16544 16770])
+            ("read_config_file" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16801 16826]))                  
+                :type "bool")
+                nil [16772 18053])
+            ("init_log_streams" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18084 18109]))                  
+                :type "void")
+                nil [18055 19304])
+            ("game_configure" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19333 19357])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19358 19383]))                  
+                :type "bool")
+                nil [19306 19636])
+            ("game_configure_port" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19670 19694])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19695 19720]))                  
+                :type "void")
+                nil [19638 20080])
+            ("game_configure_world" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20115 20139])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20140 20165]))                  
+                :type "bool")
+                nil [20082 20344])
+            ("get_world_from_cmdline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20381 20405])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20406 20431]))                  
+                :type "bool")
+                nil [20346 21800])
+            ("get_world_from_config" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21836 21860])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21861 21886]))                  
+                :type "bool")
+                nil [21802 22127])
+            ("auto_select_world" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22159 22183]))                  
+                :type "bool")
+                nil [22129 23322])
+            ("get_clean_world_path" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23364 23388]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [23324 23739])
+            ("game_configure_subgame" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23777 23801])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23802 23827]))                  
+                :type "bool")
+                nil [23742 23981])
+            ("get_game_from_cmdline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24017 24041])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24042 24067]))                  
+                :type "bool")
+                nil [23983 24536])
+            ("determine_subgame" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:pointer 1
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24568 24592]))                  
+                :type "bool")
+                nil [24538 26291])
+            ("run_dedicated_server" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26506 26536])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26537 26562]))                  
+                :type "bool")
+                nil [26473 30061])
+            ("migrate_map_database" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("game_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GameParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30096 30126])
+                    ("cmd_args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30127 30152]))                  
+                :type "bool")
+                nil [30063 32190]))          
+      :file "main.cpp"
+      :pointmax 32191
+      :fsize 32190
+      :lastmodtime '(24606 33240 169107 668000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUGFILE" . ((string "\"debug.txt\"" 2026 . 2037)))
+          ("DEFAULT_SERVER_PORT" . ((number "30000" 2066 . 2071)))
+          )
+)
+    (semanticdb-table "semanticdb-table-ce31bc"
+      :file "irrlichttypes_extrabloated.h"
+      :fsize 1150
+      :lastmodtime '(24606 33240 168107 636000))
+    (semanticdb-table "semanticdb-table-ce31e0"
+      :file "chat_interface.h"
+      :fsize 1880
+      :lastmodtime '(24606 33240 146106 932000))
+    (semanticdb-table "semanticdb-table-ce3214"
+      :file "debug.h"
+      :fsize 2829
+      :lastmodtime '(24606 33240 159107 348000))
+    (semanticdb-table "semanticdb-table-e29a5c"
+      :file "server.h"
+      :fsize 22595
+      :lastmodtime '(24606 33240 188108 276000))
+    (semanticdb-table "semanticdb-table-e29a80"
+      :file "filesys.h"
+      :fsize 4424
+      :lastmodtime '(24606 33240 160107 380000))
+    (semanticdb-table "semanticdb-table-e29ab4"
+      :file "version.h"
+      :fsize 904
+      :lastmodtime '(24606 33240 198108 596000))
+    (semanticdb-table "semanticdb-table-e29af4"
+      :file "defaultsettings.h"
+      :fsize 929
+      :lastmodtime '(24606 33240 159107 348000))
+    (semanticdb-table "semanticdb-table-e29b20"
+      :file "gettext.h"
+      :fsize 2111
+      :lastmodtime '(24606 33240 160107 380000))
+    (semanticdb-table "semanticdb-table-e60f4c"
+      :file "log.h"
+      :fsize 5204
+      :lastmodtime '(24606 33240 168107 636000))
+    (semanticdb-table "semanticdb-table-e60f98"
+      :file "httpfetch.h"
+      :fsize 3755
+      :lastmodtime '(24606 33240 166107 572000))
+    (semanticdb-table "semanticdb-table-e60fd4"
+      :file "gameparams.h"
+      :fsize 1361
+      :lastmodtime '(24606 33240 160107 380000))
+    (semanticdb-table "semanticdb-table-e6103c"
+      :file "config.h"
+      :fsize 651
+      :lastmodtime '(24606 33240 156107 252000))
+    (semanticdb-table "semanticdb-table-e71524"
+      :file "player.h"
+      :fsize 5267
+      :lastmodtime '(24606 33240 178107 956000))
+    (semanticdb-table "semanticdb-table-e71550"
+      :file "porting.h"
+      :fsize 8366
+      :lastmodtime '(24606 33240 179107 988000)))
+  :file "!home!douidik!dev!minetest!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
